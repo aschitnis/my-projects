@@ -1,0 +1,110 @@
+﻿<Window x:Class="Wpf.Test.DialogNewBookView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.Test"
+        mc:Ignorable="d"
+        Title="WindowNewBook" Height="550" Width="900">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        
+        <Button Grid.Column="3" Grid.Row="0" Command="{Binding CloseDialogCommand}" Content="Close" FontSize="24" Margin="4" HorizontalAlignment="Stretch"/>
+        
+        <Grid Grid.Column="0" Grid.Row="0" Background="AntiqueWhite">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Command="{Binding SaveNewBookCommand}" Content="save Book" FontSize="24" Margin="4" HorizontalAlignment="Stretch"/>
+            <Label Content="{Binding Message}" VerticalAlignment="Center" Foreground="Red" Margin="5,0,0,0" FontSize="16" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0"/>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1" ShowGridLines="False" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40px"/>
+                <RowDefinition Height="40px"/>
+                <RowDefinition Height="40px"/>
+                <RowDefinition Height="40px"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Name :" FontWeight="Bold" Margin="15,0,0,0" FontSize="20" Grid.Column="0" Grid.Row="0"/>
+            <Label Content="Language :" FontWeight="Bold" Margin="15,0,0,0" FontSize="20" Grid.Column="0" Grid.Row="1"/>
+            <Label Content="Publisher :" FontWeight="Bold" Margin="15,0,0,0" FontSize="20" Grid.Column="0" Grid.Row="2"/>
+            <Label Content="Author :" FontWeight="Bold" Margin="15,0,0,0" FontSize="20" Grid.Column="0" Grid.Row="3"/>
+            <Label Content="Comment :" FontWeight="Bold" Margin="15,0,0,0" FontSize="20" Grid.Column="0" Grid.Row="4"/>
+            <TextBox Text="{Binding NewBook.Name}" Background="AliceBlue" Margin="15,2,2,2" FontSize="20" Grid.Column="1" Grid.Row="0"/>
+            <TextBox Text="{Binding NewBook.Language}" Background="AliceBlue" Margin="15,2,2,2" FontSize="20" Grid.Column="1" Grid.Row="1"/>
+            <TextBox Text="{Binding NewBook.Publisher}" Background="AliceBlue" Margin="15,2,2,2" FontSize="20" Grid.Column="1" Grid.Row="2"/>
+            <TextBox Text="{Binding NewBook.Author}" Background="AliceBlue" Margin="15,2,2,2" FontSize="20" Grid.Column="1" Grid.Row="3"/>
+            <TextBox Text="{Binding NewBook.Information}" Background="AliceBlue"  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="15,2,2,2" FontSize="20" Grid.Column="1" Grid.Row="4"/>
+        </Grid>
+
+        <GridSplitter Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" ResizeBehavior="PreviousAndNext"  ResizeDirection="Columns"  Background="Gray" Width="3"/>
+        
+        <GridSplitter Grid.ColumnSpan="3" Grid.Row="2"  ResizeDirection="Rows" Background="DarkGray" Height="2" HorizontalAlignment="Stretch"  />
+
+        <DataGrid AutoGenerateColumns="False" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="AliceBlue"    
+                  IsEnabled="True" FontSize="20" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                   Name="dgExtendedData" ItemsSource="{Binding Path=BookIndexModelsList}" SelectedItem="{Binding SelectedIndexModel, Mode=TwoWay}" SelectionMode="Single" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header=" Indexe(s) Information"  Width="*" Binding="{Binding Path=IndexDescription}" IsReadOnly="True"  />
+            </DataGrid.Columns>
+            
+            <!--<DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <DataGrid
+                        x:Name="dgInnerGrid"
+                        Height="100"
+                        ItemsSource="{Binding OcNveSatz}"
+                        AutoGenerateColumns="False"
+                        >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="SSCC" Binding="{Binding NVE}" />
+                            <DataGridTextColumn Header="Empfangspartner" Binding="{Binding Empfangsdepot}" />
+                            <DataGridTextColumn Header="Schlüssel" Binding="{Binding Schluessel}" />
+                        </DataGrid.Columns>
+                    </DataGrid>  
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>-->
+            
+        </DataGrid>
+
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*" />
+            </Grid.RowDefinitions>
+            <Label Content="Index Description :" VerticalAlignment="Center" FontWeight="Bold" Margin="10,0,0,0" FontSize="20" Grid.Row="0"/>
+            <TextBox DataContext="{Binding SelectedIndexModel}" Text="{Binding Path=IndexDescription, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="AliceBlue" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="5,0,0,0" FontSize="20"  Grid.Row="1"/>
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Background="LightBlue">
+                <Button  Content="add Index"  Command="{Binding AddIndexCommand}" FontSize="24" Margin="5,10,4,0" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+                <Button  Content="delete Index"  Command="{Binding DeleteIndexCommand}" FontSize="24" Margin="5,2,4,0" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+                <Button  Content="save Index(es)"  Command="{Binding SaveAllIndexesCommand}" FontSize="24" Margin="5,2,4,0" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+            </StackPanel>
+        </Grid>
+        
+    </Grid>
+</Window>

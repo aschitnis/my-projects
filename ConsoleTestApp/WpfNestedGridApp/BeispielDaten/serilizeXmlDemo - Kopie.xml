@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <bundeslaender>
+    <bund name="Burgenland">
+      <einwohner>0</einwohner>
+      <lat>47,5</lat>
+      <bezirke>
+        <bezirk name="Eisenstadt_bz">
+          <einwohner>12061</einwohner>
+          <lat>47,8452778</lat>
+          <gemeinden>
+           <gemeinde name="Eisenstadt_gem">
+            <einwohner>12061</einwohner>
+            <lat>47,8452778</lat>
+             <orte>
+               <ort name="Eisenstadt2">
+                 <einwohner>7462</einwohner>
+                 <lat>47,8452778</lat>
+               </ort>
+               <ort name="Eisenstadt3">
+                 <einwohner>7462</einwohner>
+                 <lat>47,8452778</lat>
+               </ort>
+               <ort name="Eisenstadt4">
+                 <einwohner>7462</einwohner>
+                 <lat>47,8452778</lat>
+               </ort>
+             </orte>
+          </gemeinde>
+           <gemeinde name="Eisenstadt_gem_002">
+            <einwohner>12061</einwohner>
+            <lat>47,8452778</lat>
+            <ort name="Eisenstadt2">
+              <einwohner>7462</einwohner>
+              <lat>47,8452778</lat>
+            </ort>
+            <ort name="Eisenstadt3">
+              <einwohner>7462</einwohner>
+              <lat>47,8452778</lat>
+            </ort>
+            <ort name="Eisenstadt4">
+              <einwohner>7462</einwohner>
+              <lat>47,8452778</lat>
+            </ort>
+          </gemeinde>
+          </gemeinden>
+        </bezirk>
+        <bezirk name="Eisenstadt_bz_002">
+          <einwohner>12061</einwohner>
+          <lat>47,8452778</lat>
+          <gemeinden>
+            <gemeinde name="Eisenstadt_gem">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Eisenstadt2">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Eisenstadt3">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Eisenstadt4">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+            <gemeinde name="Eisenstadt_gem_002">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <ort name="Eisenstadt2">
+                <einwohner>7462</einwohner>
+                <lat>47,8452778</lat>
+              </ort>
+              <ort name="Eisenstadt3">
+                <einwohner>7462</einwohner>
+                <lat>47,8452778</lat>
+              </ort>
+              <ort name="Eisenstadt4">
+                <einwohner>7462</einwohner>
+                <lat>47,8452778</lat>
+              </ort>
+            </gemeinde>
+          </gemeinden>
+        </bezirk>
+      </bezirke>
+    </bund>
+      <einwohner>0</einwohner>
+      <lat>47,5</lat>
+      <bezirke>
+        <bezirk name="NOE_Bz_001">
+          <einwohner>12061</einwohner>
+          <lat>47,8452778</lat>
+          <gemeinden>
+            <gemeinde name="NOE_gem_001">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Sbg_001">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_002">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_003">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+            <gemeinde name="NOE_gem_002">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Sbg_001">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_002">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_003">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+            <gemeinde name="NOE_gem_003">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Sbg_001">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_002">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_003">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+          </gemeinden>
+        </bezirk>
+        <bezirk name="NOE_Bz_002">
+          <einwohner>12061</einwohner>
+          <lat>47,8452778</lat>
+          <gemeinden>
+            <gemeinde name="Sbg_gem_001">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Sbg_001">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_002">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_003">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+            <gemeinde name="Sbg_gem_002">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Sbg_001">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_002">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_003">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+            <gemeinde name="Sbg_gem_003">
+              <einwohner>12061</einwohner>
+              <lat>47,8452778</lat>
+              <orte>
+                <ort name="Sbg_001">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_002">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+                <ort name="Sbg_003">
+                  <einwohner>7462</einwohner>
+                  <lat>47,8452778</lat>
+                </ort>
+              </orte>
+            </gemeinde>
+          </gemeinden>
+        </bezirk>
+      </bezirke>
+    </bund>
+  </bundeslaender>
+</data>

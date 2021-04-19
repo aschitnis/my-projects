@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfOrderBooksProject.Canvasses.PanelWrap"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfOrderBooksProject.Canvasses"
+        mc:Ignorable="d"
+        Title="Wrap Panel" Height="400" MinWidth="525">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Background="Yellow">
+            <Grid Background="LightBlue" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <WrapPanel Orientation="Vertical" Grid.ColumnSpan="2">
+                    <Button FontSize="22" Content="Name" Margin="5" />
+                    <Button FontSize="22" Content="Postleitzahl" Margin="5" />
+                    <Button FontSize="22" Content="Address" Margin="5" />
+                    <Button FontSize="22" Content="Festnetz-Nr." Margin="5" />
+                    <Button FontSize="22" Content="VersicherungsNr." Margin="5" />
+                    <Button FontSize="22" Content="SteuerNr." Margin="5" />
+                    <Button FontSize="22" Content="Staatsangehörigkeit" Margin="5" />
+                </WrapPanel>
+            </Grid>
+            <Grid Background="LightBlue" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <WrapPanel Orientation="Vertical" Grid.ColumnSpan="2">
+                    <TextBox FontSize="22" MinWidth="150" MinHeight="34" Margin="5" />
+                    <TextBox FontSize="22" MinWidth="150" Margin="5" MinHeight="34" />
+                    <TextBox FontSize="22" MinWidth="150" Margin="5" MinHeight="34"/>
+                    <TextBox FontSize="22" MinWidth="150" Margin="5" MinHeight="34"/>
+                    <TextBox FontSize="22" MinWidth="150" Margin="5" MinHeight="34"/>
+                    <TextBox FontSize="22" MinWidth="150" Margin="5" MinHeight="34"/>
+                    <TextBox FontSize="22" MinWidth="150" Margin="5" MinHeight="34"/>
+                 </WrapPanel>
+            </Grid>
+            <Grid Background="LightBlue" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <WrapPanel Orientation="Vertical" Grid.ColumnSpan="2">
+                    <Button FontSize="22" Content="X1-0024" Margin="5" />
+                    <Button FontSize="22" Content="X2-0025" Margin="5" />
+                    <Button FontSize="22" Content="X3-0026" Margin="5" />
+                    <Button FontSize="22" Content="X4-0027" Margin="5" />
+                    <Button FontSize="22" Content="X5-0028" Margin="5" />
+                    <Button FontSize="22" Content="X6-0029" Margin="5" />
+                    <Button FontSize="22" Content="X7-0030" Margin="5" />
+                    <TextBox FontSize="22" Margin="5" MinWidth="80" />
+                </WrapPanel>
+            </Grid>
+         </StackPanel>
+    </Grid>
+</Window>

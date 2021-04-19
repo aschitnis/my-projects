@@ -1,0 +1,15 @@
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.Properties.Resources.resources
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.csproj.GenerateResource.Cache
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\bin\Debug\DCOM.WPF.MVVM.dll
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\bin\Debug\DCOM.WPF.MVVM.pdb
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.dll
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.pdb
+C:\Users\danderson\Documents\Visual Studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.csprojResolveAssemblyReference.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\bin\Debug\DCOM.WPF.MVVM.dll
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\bin\Debug\DCOM.WPF.MVVM.pdb
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.csprojAssemblyReference.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.Properties.Resources.resources
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.csproj.GenerateResource.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.csproj.CoreCompileInputs.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.dll
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM\obj\Debug\DCOM.WPF.MVVM.pdb

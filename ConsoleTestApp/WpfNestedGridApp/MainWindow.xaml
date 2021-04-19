@@ -1,0 +1,155 @@
+﻿<Window x:Class="WpfNestedGridApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNestedGridApp"
+        mc:Ignorable="d"
+        Title="MainWindow" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Run"  Command="{Binding LesenVersandPartnerCollisCommand}" Grid.Column="0" Grid.Row="0" Margin="4"
+                              CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext }" HorizontalAlignment="Stretch"
+                                VerticalAlignment="Center"></Button>
+            <TextBlock Text="Statusmeldung HUB ab DiALOG" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="4"
+                       FontWeight="Bold" HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+            </TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding DateienGelesenMeldung}" Margin="4" 
+                       HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            </TextBlock>
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="NVE Sätze" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="4"
+                       FontWeight="Bold" HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+            </TextBlock>
+        </Grid>
+        
+        <DataGrid AutoGenerateColumns="False"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"   
+                  IsEnabled="True"
+                   Name="dgOuterGrid" ItemsSource="{Binding OcHUBSTATStatus, Mode=TwoWay}" SelectedItem="{Binding SelectedHubstatDatei}" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Versandpartner" Binding="{Binding Versanddepot}" />
+                <DataGridTextColumn Header="HUB Datei" Binding="{Binding HubDateiName}" />
+                <DataGridTextColumn Header="Erstelldatum" Binding="{Binding Erstelldatum}" />
+                <DataGridTextColumn Header="Änderungszeit" Binding="{Binding ModifiedTime}" />
+            </DataGrid.Columns>
+            <!--
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <DataGrid
+                        x:Name="dgInnerGrid"
+                        Height="100"
+                        ItemsSource="{Binding OcNveSatz}"
+                        AutoGenerateColumns="False"
+                        >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="SSCC" Binding="{Binding NVE}" />
+                            <DataGridTextColumn Header="Empfangspartner" Binding="{Binding Empfangsdepot}" />
+                            <DataGridTextColumn Header="Schlüssel" Binding="{Binding Schluessel}" />
+                        </DataGrid.Columns>
+                    </DataGrid>  
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+            -->
+        </DataGrid>
+
+        <!--<DataGrid AutoGenerateColumns="False"  HorizontalAlignment="Stretch" Background="LightBlue" Name="dgDetails"  
+                  VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="1"   IsEnabled="True">
+            <DataGridTextColumn Header="SSCC" Binding="{Binding NVE}" />
+            <DataGridTextColumn Header="Empfangspartner" Binding="{Binding Empfangsdepot}" />
+            <DataGridTextColumn Header="Schlüssel" Binding="{Binding Schluessel}" />
+        </DataGrid>-->
+
+        <Grid Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+                <ListView Grid.Column="0" Grid.Row="0" Name="lvSSCCDetails"
+                   ItemsSource="{Binding ElementName=dgOuterGrid, Path=SelectedItem.OcNveSatz}" SelectedItem="{Binding SelectedNVE}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="SSCC" DisplayMemberBinding="{Binding NVE}" Width="120"></GridViewColumn>
+                            <GridViewColumn Header="EP" DisplayMemberBinding="{Binding Empfangsdepot}" Width="70"></GridViewColumn>
+                            <GridViewColumn Header="Schlüssel" DisplayMemberBinding="{Binding Schluessel}" Width="70"></GridViewColumn>
+                        <GridViewColumn Header="Nr." DisplayMemberBinding="{Binding FremdNummer}" Width="80"></GridViewColumn>
+                    </GridView>
+                    </ListView.View>
+                </ListView>
+                
+                <TextBlock Text="NVE"  Margin="2,0,2,0" Grid.Column="0" Grid.Row="1"
+                       FontWeight="Bold" HorizontalAlignment="Stretch" VerticalAlignment="Center" ></TextBlock>
+
+            <Grid  Grid.Column="0" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Collinummer: "  Margin="2,0,2,0" Grid.Row="0" Grid.Column="0"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" ></TextBlock>
+                <TextBox Text="{Binding ElementName=lvSSCCDetails, Path=SelectedItem.NVE}" Background="LightYellow" Margin="2,0,2,0" Grid.Row="0" Grid.Column="1"
+                             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></TextBox>
+                <Button Content="save as CSV" Command="{Binding SpeichernColliDataCommand}"  Grid.Row="0" Grid.Column="2" Foreground="DarkBlue" FontWeight="Bold"></Button>
+
+                <TextBlock Text="Schlüssel: "  Margin="2,0,2,0" Grid.Row="1" Grid.Column="0"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" ></TextBlock>
+                <TextBox Text="{Binding ElementName=lvSSCCDetails, Path=SelectedItem.Schluessel}" Background="LightYellow" Margin="2,0,2,0" Grid.Row="1" Grid.Column="1"
+                             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></TextBox>
+
+                <TextBlock Text="Emp. Partner: "  Margin="2,0,2,0" Grid.Row="2" Grid.Column="0"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" ></TextBlock>
+                <TextBox Text="{Binding ElementName=lvSSCCDetails, Path=SelectedItem.Empfangsdepot}" Background="LightYellow" Margin="2,0,2,0" Grid.Row="2" Grid.Column="1"
+                             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></TextBox>
+
+                <TextBlock Text="Bemerkung: "  Margin="2,0,2,0" Grid.Row="3" Grid.Column="0"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Center" ></TextBlock>
+                <TextBox Text="{Binding ElementName=lvSSCCDetails, Path=SelectedItem.Bemerkung}" Background="LightYellow" Margin="2,0,2,0" Grid.Row="3" Grid.Column="1"
+                             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></TextBox>
+
+            </Grid>
+                
+        </Grid>
+
+    </Grid>
+</Window>

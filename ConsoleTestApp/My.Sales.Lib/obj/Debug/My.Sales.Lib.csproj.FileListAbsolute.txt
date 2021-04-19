@@ -1,0 +1,6 @@
+C:\Projekte\ConsoleTestApp\My.Sales.Lib\obj\Debug\My.Sales.Lib.csproj.CoreCompileInputs.cache
+C:\Projekte\ConsoleTestApp\My.Sales.Lib\bin\Debug\My.Sales.Lib.dll.config
+C:\Projekte\ConsoleTestApp\My.Sales.Lib\bin\Debug\My.Sales.Lib.dll
+C:\Projekte\ConsoleTestApp\My.Sales.Lib\bin\Debug\My.Sales.Lib.pdb
+C:\Projekte\ConsoleTestApp\My.Sales.Lib\obj\Debug\My.Sales.Lib.dll
+C:\Projekte\ConsoleTestApp\My.Sales.Lib\obj\Debug\My.Sales.Lib.pdb

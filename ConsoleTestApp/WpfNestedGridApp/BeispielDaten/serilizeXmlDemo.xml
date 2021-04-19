@@ -1,0 +1,55 @@
+﻿<data>
+  <bundeslaender>
+    <bund name="Burgenland">
+      <einwohner>0</einwohner>
+      <lat>47,5</lat>
+      <bezirke>
+        <bezirk name="Eisenstadt_bz">
+          <einwohner>12061</einwohner>
+          <lat>47,8452778</lat>
+          <gemeinden>
+           <gemeinde name="Eisenstadt_gem">
+            <einwohner>12061</einwohner>
+            <lat>47,8452778</lat>
+             <orte>
+               <ort name="Eisenstadt2">
+                 <einwohner>7462</einwohner>
+                 <lat>47,8452778</lat>
+               </ort>
+               <ort name="Eisenstadt3">
+                 <einwohner>7462</einwohner>
+                 <lat>47,8452778</lat>
+               </ort>
+               <ort name="Eisenstadt4">
+                 <einwohner>7462</einwohner>
+                 <lat>47,8452778</lat>
+               </ort>
+             </orte>
+          </gemeinde>
+           <gemeinde name="Eisenstadt_gem_002">
+            <einwohner>12061</einwohner>
+            <lat>47,8452778</lat>
+            <ort name="Eisenstadt2">
+              <einwohner>7462</einwohner>
+              <lat>47,8452778</lat>
+            </ort>
+            <ort name="Eisenstadt3">
+              <einwohner>7462</einwohner>
+              <lat>47,8452778</lat>
+            </ort>
+            <ort name="Eisenstadt4">
+              <einwohner>7462</einwohner>
+              <lat>47,8452778</lat>
+            </ort>
+          </gemeinde>
+          </gemeinden>
+        </bezirk>
+        <bezirk name="Eisenstadt_bz_002">
+          <einwohner>12061</einwohner>
+          <lat>47,8452778</lat>
+          <gemeinden></gemeinden>
+		</bezirk>
+	   </bezirke>
+	</bund>
+  </bundeslaender>
+</data>

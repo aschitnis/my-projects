@@ -1,0 +1,12 @@
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\TestDomainModel.dll.config
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\TestDomainModel.dll
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\TestDomainModel.pdb
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\EntityFramework.dll
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\EntityFramework.xml
+C:\Projekte\ConsoleTestApp\TestDomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projekte\ConsoleTestApp\TestDomainModel\obj\Debug\TestDomainModel.csprojAssemblyReference.cache
+C:\Projekte\ConsoleTestApp\TestDomainModel\obj\Debug\TestDomainModel.csproj.CoreCompileInputs.cache
+C:\Projekte\ConsoleTestApp\TestDomainModel\obj\Debug\TestDomainModel.csproj.CopyComplete
+C:\Projekte\ConsoleTestApp\TestDomainModel\obj\Debug\TestDomainModel.dll
+C:\Projekte\ConsoleTestApp\TestDomainModel\obj\Debug\TestDomainModel.pdb

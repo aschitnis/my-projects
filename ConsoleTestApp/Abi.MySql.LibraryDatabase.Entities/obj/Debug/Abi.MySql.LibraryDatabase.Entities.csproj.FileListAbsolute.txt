@@ -1,0 +1,5 @@
+C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\bin\Debug\Abi.MySql.LibraryDatabase.Entities.dll
+C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\bin\Debug\Abi.MySql.LibraryDatabase.Entities.pdb
+C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.dll
+C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.pdb

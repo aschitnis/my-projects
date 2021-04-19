@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rootlevel>
+  <collection1>
+    <state name="Burgenland">
+      <population>0</population>
+      <latitude>47.5</latitude>
+	  <bezirke>
+	  <bezirk name="Raggerpoh">
+	  <population>53447</population>
+	  <latitude>34.0</latitude>
+	  <plz>6534</plz>
+	  </bezirk>
+	  <bezirk name="Viehhaufen">
+	  <population>11326</population>
+	  <latitude>39.8</latitude>
+	  <plz>7000</plz>
+	  </bezirk>
+	  </bezirke>
+	</state>
+	<state name="Salzburg">
+      <population>5230000</population>
+      <latitude>41.5</latitude>
+	  <bezirke>
+	  <bezirk name="Salzkammerguat">
+	  <population>66812</population>
+	  <latitude>52.0</latitude>
+	  <plz>5119</plz>
+	  </bezirk>
+	  <bezirk name="obertrum">
+	  <population>19003</population>
+	  <latitude>41.2</latitude>
+	  <plz>5002</plz>
+	  </bezirk>
+	  </bezirke>
+	</state>
+  </collection1>
+</rootlevel>

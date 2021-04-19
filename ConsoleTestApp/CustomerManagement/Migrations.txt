@@ -1,0 +1,8 @@
+﻿enable-migrations													(please check the connection string Name in App.config. This must match the name (base("xxxx")) in DbContext inherited Context class)
+
+add-migration [optional]-Force LS2.0CustomerDataStorageContext-v1	(please check the connection string Name in App.config. This must match the name (base("xxxx")) in DbContext inherited Context class)
+
+update-database -verbose
+
+web link:
+https://www.entityframeworktutorial.net/code-first/code-based-migration-in-code-first.aspx

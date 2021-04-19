@@ -1,0 +1,12 @@
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EFBikeSalesLib.dll.config
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EFBikeSalesLib.dll
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EFBikeSalesLib.pdb
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EntityFramework.dll
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EntityFramework.xml
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\obj\Debug\EFBikeSalesLib.csproj.CoreCompileInputs.cache
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\obj\Debug\EFBikeSalesLib.csproj.CopyComplete
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\obj\Debug\EFBikeSalesLib.dll
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\obj\Debug\EFBikeSalesLib.pdb
+C:\Projekte\ConsoleTestApp\EFBikeSales\EFBikeSalesLib\obj\Debug\EFBikeSalesLib.csprojAssemblyReference.cache

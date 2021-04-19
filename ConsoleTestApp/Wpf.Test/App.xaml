@@ -1,0 +1,14 @@
+﻿<Application x:Class="Wpf.Test.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:properties="clr-namespace:Wpf.Test.Properties"
+             xmlns:local="clr-namespace:Wpf.Test" StartupUri="WindowSalesView.xaml" >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="BookManagementResource.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <properties:Settings x:Key="Settings" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,19 @@
+{
+	"coord":{"lon":13.04,"lat":47.8},
+	"weather":[{"id":741,"main":"Fog","description":"Nebel","icon":"50d"}],
+	"base":"stations",
+	"main":{"temp":277.01,
+			"feels_like":274.43,
+			"temp_min":276.15,
+			"temp_max":278.15,"pressure":1023,"humidity":93},
+	"visibility":10000,
+	"wind":{"speed":1.5,"deg":180},
+	"clouds":{"all":20},
+	"dt":1605165086,
+	"sys":{"type":1,"id":6877,
+			"country":"AT","sunrise":1605161373,"sunset":1605195280},
+	"timezone":3600,
+	"id":2766824,
+	"name":"Salzburg",
+	"cod":200
+}

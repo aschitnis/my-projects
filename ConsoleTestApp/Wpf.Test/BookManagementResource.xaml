@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Wpf.Test">
+    <SolidColorBrush x:Key="LabelColor_Theme_main" Color="#F49426"/>
+    <SolidColorBrush x:Key="LabelColor_Theme_main_active" Color="#F6A64E"/>
+
+    <SolidColorBrush x:Key="SchlafTeqColor_Theme_main" Color="#7A30CF"/>
+    <SolidColorBrush x:Key="SchlafTeqColor_Light_Theme_main" Color="#663113CF"/>
+    <SolidColorBrush x:Key="DeveloperColor_Theme_main" Color="#ac2eb8"/>
+    <SolidColorBrush x:Key="DeveloperColor_Theme_main_active" Color="#FFCE4DDA"/>
+    <SolidColorBrush x:Key="VitarioColor_Theme_main" Color="#F49426"/>
+    <SolidColorBrush x:Key="ErgoDeluxeColor_Theme_main" Color="#AC2023"/>
+    <SolidColorBrush x:Key="SchlafOptimalColor_Theme_main" Color="#ffd000"/>
+</ResourceDictionary>

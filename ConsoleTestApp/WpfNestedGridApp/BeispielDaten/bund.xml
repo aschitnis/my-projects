@@ -1,0 +1,55 @@
+<oesterreich>
+<bund name=salzburg>
+<bezirk name=salzburg umgebung>
+<kz>JE</kz>
+<bzeinwohner>534535</bzeinwohner>
+<bzflaeche>12000</bzflaeche>
+<gemeinde name=salzburg>
+<gmeinwohner>534535</gmeinwohner>
+<gmflaeche>12000</gmflaeche>
+<gmplz>9999,9999,9999,0000,3333,4323,7777</gmplz>
+<ort>
+<name>ort1</name>
+<plz></plz>
+<lat></lat>
+<lon></lon>
+</ort>
+<ort>
+<name>ort2</name>
+<plz></plz>
+<lat></lat>
+<lon></lon>
+</ort>
+<ort>
+<name>ort3</name>
+<plz></plz>
+<lat></lat>
+<lon></lon>
+</ort>
+</gemeinde>
+<gemeinde name=mitterbach>
+<gmeinwohner>6790</gmeinwohner>
+<gmflaeche>16000</gmflaeche>
+<gmplz>9999,9999,9999,0000,3333,0000,7777</gmplz>
+<ort>
+<name>ort12</name>
+<plz></plz>
+<lat></lat>
+<lon></lon>
+</ort>
+<ort>
+<name>ort13</name>
+<plz></plz>
+<lat></lat>
+<lon></lon>
+</ort>
+<ort>
+<name>ort14</name>
+<plz></plz>
+<lat></lat>
+<lon></lon>
+</ort>
+</gemeinde>
+</bezirk>
+</bund>
+</oesterreich>

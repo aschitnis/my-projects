@@ -1,0 +1,17 @@
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\obj\Debug\My.Encryption.Lib.csproj.CoreCompileInputs.cache
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\My.Encryption.Lib.dll.config
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\My.Encryption.Lib.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\My.Encryption.Lib.pdb
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\BCrypt.Net-Next.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Buffers.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Memory.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Numerics.Vectors.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\BCrypt.Net-Next.xml
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Buffers.xml
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Memory.xml
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Numerics.Vectors.xml
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\obj\Debug\My.Encryption.Lib.csproj.CopyComplete
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\obj\Debug\My.Encryption.Lib.dll
+C:\Projekte\ConsoleTestApp\My.Encryption.Lib\obj\Debug\My.Encryption.Lib.pdb

@@ -1,0 +1,40 @@
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.IDialogService.exe.config
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.csprojResolveAssemblyReference.cache
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\MainWindow.g.cs
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\App.g.cs
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService_MarkupCompile.cache
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService_MarkupCompile.lref
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DialogWindow.baml
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DialogWindow.g.cs
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.IDialogService.exe
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.IDialogService.pdb
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\MainWindow.baml
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.g.resources
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.Properties.Resources.resources
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.csproj.GenerateResource.Cache
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.exe
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.pdb
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.dll
+c:\users\danderson\documents\visual studio 2015\Projects\DCOM.WPF.MVVM.IDialogService\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.pdb
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.IDialogService.exe.config
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.IDialogService.exe
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.IDialogService.pdb
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.dll
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\bin\Debug\DCOM.WPF.MVVM.pdb
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.csprojAssemblyReference.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DialogWindow.baml
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DialogWindow.g.cs
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\MainWindow.g.cs
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\App.g.cs
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService_MarkupCompile.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService_MarkupCompile.lref
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\MainWindow.baml
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.g.resources
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.Properties.Resources.resources
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.csproj.GenerateResource.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.csproj.CoreCompileInputs.cache
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.csproj.CopyComplete
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.exe
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DCOM.WPF.MVVM.IDialogService.pdb
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DialogSecondWindow.g.cs
+C:\Projekte\ConsoleTestApp\DCOM.WPF.MVVM.IDialogService\obj\Debug\DialogSecondWindow.baml
