@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Projekte\ConsoleTestApp\Wpf.Test\obj\Debug\
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\
 Wpf.Test
 none
 false
 DEBUG;TRACE
-C:\Projekte\ConsoleTestApp\Wpf.Test\App.xaml
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\Wpf.Test\App.xaml
 8630118695
 
 552017327671
-741295437048
+74345803316
 BookManagementResource.xaml;MainWindow.xaml;MainBooksWindow.xaml;WindowGridSplitter.xaml;DialogNewBookView.xaml;WindowTest.xaml;WindowTest2.xaml;WindowWeather.xaml;
 
 True
