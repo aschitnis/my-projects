@@ -66,6 +66,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Encryption.Lib", "My.Enc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Sales.Lib", "My.Sales.Lib\My.Sales.Lib.csproj", "{59950D8B-501E-4F33-95F0-646AD51CA584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherDataUI", "WeatherDataUI\WeatherDataUI.csproj", "{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -172,6 +174,10 @@ Global
 		{59950D8B-501E-4F33-95F0-646AD51CA584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59950D8B-501E-4F33-95F0-646AD51CA584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59950D8B-501E-4F33-95F0-646AD51CA584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,6 +199,7 @@ Global
 		{CC20537B-F4E1-48C2-BB9C-BB95528D8D0A} = {2691E25A-E1D3-4191-BD4F-AB8283EDE339}
 		{3C5A4FDE-275F-49CE-94A4-56F8B35AD93C} = {2691E25A-E1D3-4191-BD4F-AB8283EDE339}
 		{59950D8B-501E-4F33-95F0-646AD51CA584} = {2691E25A-E1D3-4191-BD4F-AB8283EDE339}
+		{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7} = {2691E25A-E1D3-4191-BD4F-AB8283EDE339}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B02F975-BCFF-4C25-8D93-D5AD52D98649}

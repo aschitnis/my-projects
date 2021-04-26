@@ -1,0 +1,15 @@
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\bin\Debug\WeatherDataUI.exe.config
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\bin\Debug\WeatherDataUI.exe
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\bin\Debug\WeatherDataUI.pdb
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.csprojAssemblyReference.cache
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\MainWindow.g.cs
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\App.g.cs
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI_MarkupCompile.cache
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI_MarkupCompile.lref
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\MainWindow.baml
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.g.resources
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.Properties.Resources.resources
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.csproj.GenerateResource.cache
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.csproj.CoreCompileInputs.cache
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.exe
+C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\WeatherDataUI.pdb
