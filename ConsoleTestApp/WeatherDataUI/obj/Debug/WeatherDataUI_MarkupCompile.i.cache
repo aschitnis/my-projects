@@ -5,7 +5,7 @@ winexe
 C#
 .cs
 C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\obj\Debug\
-WeatherDataUI
+MyProjects.WeatherData.Wpf.WeatherDataUI
 none
 false
 DEBUG;TRACE
@@ -16,5 +16,5 @@ C:\Users\Mustermann\source\repos\git\my-projects\ConsoleTestApp\WeatherDataUI\Ap
 13152784993
 MainWindow.xaml;
 
-True
+False
 
