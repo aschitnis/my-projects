@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyProjects.WeatherData.Wpf.WeatherDataUI.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,14 @@ namespace MyProjects.WeatherData.Wpf.WeatherDataUI
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ApiAccess api = new ApiAccess("Salzburg");
+            string json;
+            api.GetWeather(out json);
+            string s = json;
         }
     }
 }
