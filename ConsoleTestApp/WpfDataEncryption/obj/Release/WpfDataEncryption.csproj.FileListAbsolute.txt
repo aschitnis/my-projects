@@ -1,0 +1,15 @@
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\bin\Release\WpfDataEncryption.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\bin\Release\WpfDataEncryption.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\bin\Release\WpfDataEncryption.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\MainWindow.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\App.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption_MarkupCompile.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption_MarkupCompile.lref
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\MainWindow.baml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.g.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.Properties.Resources.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.csproj.GenerateResource.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfDataEncryption\obj\Release\WpfDataEncryption.pdb

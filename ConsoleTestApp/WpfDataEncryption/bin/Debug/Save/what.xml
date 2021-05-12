@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+<topics>
+<topic name="irctc">
+<user name="transdatix" password="null!">
+<addtdata></addtdata>
+<securitydata>testing</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="dgh_google">
+<user name="abhijit.chitnis@proschlaf.eu" password="elfriede51">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="dgh_zeiterfassung">
+<user name="Chitnis Abhijit" password="abhijiti51">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web>https://zsw.finkzeit.at/webterm?lic=gesundheitshaus_salzburg</web>
+</user>
+</topic>
+<topic name="salzburgag_information">
+<user name="keine" password="keine">
+<addtdata></addtdata>
+<securitydata>
+	kundennummer: 10180934
+	vertragsnummer: 41069643
+	email: khg_elfi@hotmail.com
+</securitydata>
+<web>https://onlineservice.salzburg-ag.at/</web>
+</user>
+</topic>
+<topic name="salzburgag_online_login">
+<user name="khg_elfi@hotmail.com" password="Abhijiti71!">
+<addtdata></addtdata>
+<securitydata>Startup passwort: $M4Pk@iVsAdq</securitydata>
+<web>meine.salzburg-ag.at</web>
+</user>
+</topic>
+<topic name="dgh_bitlocker">
+<user name="null" password="12H07M53">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web>https://zsw.finkzeit.at/webterm?lic=gesundheitshaus_salzburg</web>
+</user>
+</topic>
+<topic name="flatex">
+<user name="abhijit" password="Elfriede51">
+<addtdata>login ist möglich auch mit dem Kundennummer möglich</addtdata>
+<securitydata>Kundennummer: 3031936</securitydata>
+<web>https://www.flatex.at/kunden-login/</web>
+</user>
+</topic>
+<topic name="zdf login">
+<user name="khg_elfi@hotmail.com" password="Abhijiti51" PIN="1234">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="hdfc">
+<user name="34475986" password="shambhu60!">
+<addtdata>phoolchatti</addtdata>
+<debitcard>
+<number>4160 2107 0864 5232</number>
+<cvv>772</cvv>
+<pin>5186</pin>
+<valid>10/24</valid>
+<nameoncard>ABHIJIT S CHITNIS</nameoncard>
+</debitcard>
+<securitydata>
+gefragtes kennwort:elfriede, benutzer:aschitnis974 
+Antworten zu den Sicherheitsfragen- 
+shampoo:wolff, deo:lomani, pet:none, Int.language:german, elfi Mobil: 6003 (letzte 4 Ziffern)
+gefragtes Kennwort(online kauf): elfriede  Benutzer: aschitnis974 
+</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="hdfc Bank">
+<user name="34475986" password="shambhu60!">
+<addtdata>Codes:[IFSC:HDFC0000114, MICR:400240025]
+</addtdata>
+<debitcard></debitcard>
+<branchDetails>
+<branchPhone>0091 22-61606161</branchPhone>
+<branchCode>0321</branchCode>
+<branchName>ANDHERI WEST,SHOPPERS STOP</branchName>
+<branchAddress>30 Navyug Society, Krishna Kunj,
+			   V.L.Mehta Road, Juhu-Vile Parle West,
+			   Juhu Mumbai 400056
+</branchAddress>
+</branchDetails>
+<accountDetails>
+<accountType>Savings Account</accountType>
+<accountNumber>01141060009866</accountNumber>
+<accountProductType>SAVINGS-NRE</accountProductType>
+<ifscCode>HDFC0000114</ifscCode>
+<swiftCode>HDFCINBBXXX</swiftCode>
+</accountDetails>
+<number></number>
+<pin></pin>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="vodafone">
+<user name="7506632698" password="Elfriede32">
+<addtdata>Guthaben abfragen: *101#</addtdata>
+<securitydata>where do you want to retire?: Salzburg</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="ams elogin">
+<user name="aschitnis" password="Elfriede51">
+<addtdata>Telefonnummer: +43(0)6628883</addtdata>
+<securitydata>Identifikationsnummer für Auskünfte: 1295024</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="wlan cablelink">
+<user name="cablelink_0036653" password="Sh1Wb3FLw715nkXY">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="apple">
+<user name="aschitnis@hotmail.com" password="Elfriede51">
+<addtdata></addtdata>
+<securitydata>Antworten zu den Sicherheitsfragen: salzburg, abhijit, bangerl</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="gmail / youtube">
+<user name="chitnis.abhijit.sbg@gmail.com" password="Elfriede31">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="dropbox">
+<user name="chitnis.abhijit.sbg@gmail.com" password="Elfriede31">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="facebook">
+<user name="aschitnis@hotmail.com" password="licpras5186">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="messenger">
+<user name="aschitnis@hotmail.com" password="Licpras5186">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="linkedin">
+<user name="" password="Elfriede51">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="finanzamt">
+<user name="Teilnehmer-Identifikation:13885957m712" password="PIN:0w44tmpuk0">
+<addtdata>Steuernummer: 910769462</addtdata>
+<securitydata>Teilnehmer-Identifikation:13885957m712; Benutzer-Identifikation:licpras71; PIN:0w44tmpuk0 </securitydata>
+<web>https://finanzonline.bmf.gv.at/fon/login.do?to=j</web>
+</user>
+</topic>
+<topic name="gkk über handy-signatur">
+<user name="00436506514370" password="abhijit5186">
+<addtdata></addtdata>
+<securitydata>Widerrufs-Passwort:abhijit71; Signatur-Passwort:abhijit5186 </securitydata>
+<web>www.meinesv.at / https://www.handy-signatur.at/hs2/app.aspx</web>
+</user>
+</topic>
+<topic name="abe books">
+<user name="aschitnis@hotmail.com" password="licpras77">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="handy signatur">
+<user name="00436506514370" password="abhijit5186">
+<addtdata></addtdata>
+<securitydata>Widerrufs-Passwort:abhijit71; Signatur-Passwort:abhijit5186 </securitydata>
+<web>www.handy-signatur.at / www.meinesv.at</web>
+</user>
+</topic>
+<topic name="spängler">
+<user name="aschitnis" password="5186Licpras">
+<addtdata>BIC:SPAEAT2S
+          IBAN:AT24 1953 0100 0001 2482
+		  Karten-Nr: 670 2533 0485 7127 4877
+		  Bankomat Pin: 6794</addtdata>
+<securitydata>erste Chef: bangerl</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="paylife">
+<user name="aschitnis" password="3D securecode: Elfriede51">
+<addtdata>Begrüßung: salzburg</addtdata>
+<securitydata>Konto: 10051133428  Zugangscode für App: 51861 </securitydata>
+<weblogin>KUNDENNUMMER: 102893677 PASSWORD: Elfriede51!</weblogin>
+<web>login : https://my.paylife.at/de/authentifizierung/anmelden/</web>
+</user>
+</topic>
+<topic name="mastercard/paylife">
+<user name="...." password="....">
+<addtdata>gültig bis: 01/25
+mit dem obengennanten <PIN>Pin</PIN>PIN> identifizieren Sie sich 
+bei Geldausgabeautomaten, POs-terminals und Selbstbedienungsautomaten
+als berechtigter Karteninhaber.
+</addtdata>
+<securitydata>card No: 5266 4147 9263 7259  cv: 744  code:5169 	PIN: 1370
+Online Zahlungen (3D Secure Verfahren):
+3D securecode: Elfriede51
+			  secCheck App-PIN -> 5186
+			  secCheck App-Identifikationsnummer -> 192696936
+</securitydata>
+<weblogin>....</weblogin>
+<web>....</web>
+</user>
+</topic>
+<topic name="Elfi/3Mobil">
+<user name="aschitnis" password="Abhijiti71">
+<addtdata>Kundenkennwort vergessen: 0660 303030 anrufen</addtdata>
+<securitydata></securitydata>
+<extrasecuritydata>
+<nr>6504056003</nr>
+<kundenkennwort>krbecek (notiert am 02.12.2019. Stimmt wahrscheinlich nicht)</kundenkennwort>
+<pin>(Bildschirm entsperren):090271</pin>
+<zusatzpin>(die Funktion dieses PIN ist unbekannt)3151</zusatzpin>
+<puk>48597587</puk>
+</extrasecuritydata>
+<web>www.drei.at</web>
+</user>
+</topic>
+<topic name="magenta">
+<user name="6506514370" password="Elfriede51Abhijiti">
+<addtdata>telering heißt jetzt magenta</addtdata>
+<securitydata></securitydata>
+<extrasecuritydata>
+<nr></nr>
+<kundenkennwort></kundenkennwort>
+<kundennummer>1.14799915</kundennummer>
+<pin>(Bildschirm entsperren):8855</pin>
+<puk>18468970</puk>
+</extrasecuritydata>
+<web>https://www.magenta.at/hilfe-service/mein-magenta</web>
+</user>
+</topic>
+<topic name="icloud">
+<user name="aschitnis@hotmail.com" password="Elfriede51">
+<addtdata>iPad login: elfi51</addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="paypal Elfi">
+<user name="" password="31abhijiti51?">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="bettina woww">
+<user name="+4368110787396" password="Abhina36!">
+<addtdata>unter Konto Manager ist etliche Information zu finden.</addtdata>
+<securitydata>email: baeumer.bettina@gmail.com
+			  kundenkennwort : 120440
+			  PUK : 67335030
+</securitydata>
+<web>https://www.kontomanager.at/index.php?brand=wowww</web>
+</user>
+</topic>
+<topic name="bettina ubs bank">
+<user name="nicht vorhanden" password="nicht vorhanden">
+<addtdata>bitte verwenden Sie die UBS-Banking App</addtdata>
+ <contractnumber>11199802</contractnumber>
+ <pin>123612</pin>
+ <oldpin>036577</oldpin>
+<securitydata>
+</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="paypal">
+<user name="" password="Elfriede51">
+<addtdata></addtdata>
+<securitydata>Geb.Ort des Vaters: murud; Mädchenname der Mutter: veena</securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="vectone">
+<user name="6889696710" password="elfriede51">
+<addtdata>Mobilnummer: 0043-6889696710</addtdata>
+<securitydata></securitydata>
+<web>https://www.vectonemobile.at/myaccount/login</web>
+</user>
+</topic>
+<topic name="ebay">
+<user name="aschitnis@hotmail" password="elfriede52">
+<addtdata></addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+<topic name="github">
+<user name="aschitnis@hotmail.com" password="Elfriede51">
+<addtdata>second user: chitnis.abhijit.sbg@gmail.com  password: Elfriede51</addtdata>
+<securitydata></securitydata>
+<web></web>
+</user>
+</topic>
+</topics>
+</data>
