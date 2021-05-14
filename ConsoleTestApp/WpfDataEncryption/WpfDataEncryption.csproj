@@ -56,6 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="classes\CustomExtensions.cs" />
+    <Compile Include="classes\DataContainer.cs" />
     <Compile Include="classes\helpers\XmlHelper.cs" />
     <Compile Include="classes\PasswordManager.cs" />
     <Compile Include="classes\Security.cs" />
@@ -105,8 +107,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

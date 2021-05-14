@@ -10,22 +10,6 @@ using WpfDataEncryption.viewmodels;
 
 namespace WpfDataEncryption.models
 {
-    public class ModelsContainer : ViewModelBase
-    {
-        private List<TopicModel> _topics;
-        private List<TopicModel> _filteredtopics;
-
-        // Name => _name != null ? _name : "NA";
-        public List<TopicModel> Topics  
-         { get => _topics != null ? _topics : new List<TopicModel>(); private set => SetProperty(ref _topics, value);  }
-        public List<TopicModel> FilteredTopics { get => _filteredtopics != null ? _filteredtopics : new List<TopicModel>(); set => SetProperty(ref _filteredtopics, value);  }
-        public ModelsContainer() {   }
-
-        private void Initialize()
-        {
-            // XmlManager xmlManager
-        }
-    }
 
     public class TopicModel : ViewModelBase
     {
@@ -33,15 +17,12 @@ namespace WpfDataEncryption.models
         private UserModel _userdata;
 
         public string Name { get => _name; set => SetProperty(ref _name, value); }
-        public UserModel UserData { get { return _userdata; } set { SetProperty(ref _userdata, value); } }
-        public TopicModel(string name, UserModel usrdata)
-        {
-           // UserData = usrdata ?? default(UserModel);
-        }
-        public TopicModel()
-        {
-            UserData = new UserModel();
-        }
+        public UserModel UserData { get => _userdata ?? new UserModel(); set => SetProperty(ref _userdata, value); }
+        
+        #region constructor
+        public TopicModel(string name, UserModel usrdata) { UserData = usrdata; Name = name; }
+        public TopicModel() {  }
+        #endregion
     }
 
     public class UserModel : ViewModelBase
@@ -51,20 +32,28 @@ namespace WpfDataEncryption.models
         private string _additionaldata;
         private string _weblink;
         private string _securitydata;
+        private string _debitcard;
+        private BranchInformation _bankbranchdetails;
         private ExtraSecurityData _additionalsecuritydata;
 
-        public string Name { get { return _name; } set { SetProperty(ref _name, value); } }
-        public string Password { get { return _password; } set { SetProperty(ref _password, value); } }
-        public string SecurityData { get { return _securitydata; } set { SetProperty(ref _securitydata, value); } }
-        public string AdditionalData { get { return _additionaldata; } set { SetProperty(ref _additionaldata, value); } }
-        public string Weblink { get { return _weblink; } set { SetProperty(ref _weblink, value); } }
-        public ExtraSecurityData AdditionalSecurityData { get { return _additionalsecuritydata; } set { SetProperty(ref _additionalsecuritydata, value); } }
-
+        public string Name { get => _name; set => SetProperty(ref _name, value); } 
+        public string Password { get => _password; set => SetProperty(ref _password, value); } 
+        public string SecurityData { get => _securitydata; set => SetProperty(ref _securitydata, value); }
+        public string AdditionalData { get => _additionaldata; set => SetProperty(ref _additionaldata, value); } 
+        public string Weblink { get => _weblink; set => SetProperty(ref _weblink, value); } 
+        public ExtraSecurityData AdditionalSecurityData { get => _additionalsecuritydata ?? new ExtraSecurityData();  set => SetProperty(ref _additionalsecuritydata, value); } 
+        public string DebitCard { get => _debitcard; set => SetProperty(ref _debitcard, value); }
+        public BranchInformation BankBranchDetails { get => _bankbranchdetails ?? new BranchInformation(); set => SetProperty(ref _bankbranchdetails, value); }
         public UserModel() {  }
 
         internal void Init(string name, string password, string securitydata, string addtdata,string weblink,ExtraSecurityData addtsecuritydata)
         {
-            AdditionalSecurityData = addtsecuritydata == null ? new ExtraSecurityData() : addtsecuritydata;
+            Name = name;
+            Password = password;
+            SecurityData = securitydata;
+            AdditionalData = addtdata;
+            Weblink = weblink;
+            AdditionalSecurityData =  addtsecuritydata;
         }
     }
 
@@ -90,5 +79,29 @@ namespace WpfDataEncryption.models
             Puk = puk;
         }
         public ExtraSecurityData()  {  }
+    }
+
+    public class BranchInformation:ViewModelBase
+    {
+        private string _telefon;
+        private string _code;
+        private string _name;
+        private string _address;
+
+        public string Telefon { get => _telefon; set=> SetProperty(ref _telefon, value); }
+        public string Code { get => _code; set => SetProperty(ref _code, value); }
+        public string Name { get => _name; set => SetProperty(ref _name, value); }
+        public string Address { get => _address; set => SetProperty(ref _address, value); }
+        
+        #region constructor
+        public BranchInformation(string telefon,string code,string name,string address)
+        {
+            Telefon = telefon;
+            Code = code;
+            Name = name;
+            Address = address;
+        }
+        public BranchInformation() {}
+        #endregion
     }
 }
