@@ -1,0 +1,8 @@
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\bin\Release\ConsoleWebSocketClient.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\bin\Release\ConsoleWebSocketClient.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\bin\Release\ConsoleWebSocketClient.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\bin\Release\websocket-sharp.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Release\ConsoleWebSocketClient.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Release\ConsoleWebSocketClient.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Release\ConsoleWebSocketClient.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Release\ConsoleWebSocketClient.pdb
