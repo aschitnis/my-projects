@@ -6,3 +6,4 @@ C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Debug\ConsoleWebSocketClient.csproj.CopyComplete
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Debug\ConsoleWebSocketClient.exe
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Debug\ConsoleWebSocketClient.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketClient\obj\Debug\ConsoleWebSocketClient.csprojAssemblyReference.cache

@@ -100,6 +100,7 @@
     <Compile Include="temp.classes\MyDelegateExample.cs" />
     <Compile Include="temp.classes\MyTestClass.cs" />
     <Compile Include="temp.classes\TaskScheduler.cs" />
+    <Compile Include="temp.classes\TestApi.cs" />
     <Compile Include="TempTestClass.cs" />
     <Compile Include="webservice\CHttpTest.cs" />
   </ItemGroup>

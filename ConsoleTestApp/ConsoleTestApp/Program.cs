@@ -18,7 +18,9 @@ namespace ConsoleTestApp
     {
         public static void Main(string[] args)
         {
- 
+            ApiAccess api = new ApiAccess();
+            Exception ex = api.GetAllCurrencyExchangeRatesAsJsonString("INR");
+
             TimeSpan timeSpent = new TimeSpan(12);
             Duration duration = new Duration(TimeSpan.FromSeconds(30.0));
 

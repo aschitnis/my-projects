@@ -16,3 +16,12 @@ C:\Projekte\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnitt
 C:\Projekte\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.csproj.CopyComplete
 C:\Projekte\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.dll
 C:\Projekte\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\bin\Debug\schnittstelle.http.service.currency.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\bin\Debug\schnittstelle.http.service.currency.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.service.currency\obj\Debug\schnittstelle.http.service.currency.pdb

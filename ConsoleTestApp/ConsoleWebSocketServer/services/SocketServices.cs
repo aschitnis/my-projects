@@ -31,26 +31,15 @@ namespace Demo.Ws.Server.socket.services
 
     public class CurrencyService : WebSocketBehavior
     {
-        protected async override void OnMessage(MessageEventArgs e)
+        protected override void OnMessage(MessageEventArgs e)
         {
-            //await Task.Factory.StartNew(() => { });
-            //base.OnMessage(e);
             ApiAccess api = new ApiAccess();
-            using (var socket = new ClientWebSocket())
-            {
-                try
-                {
-                    await socket.ConnectAsync(new Uri("https://api.currencyscoop.com/v1/latest?base=INR&api_key=e765634f4c80f76ea733e1e5da897a39"), CancellationToken.None);
-
-                    await api.Send(socket,)
-                    //await Receive(socket);
-
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"ERROR - {ex.Message}");
-                }
-            }
+            string responseJson = null;
+            Exception ex = api.GetAllCurrencyExchangeRatesAsJsonString(e.Data, out responseJson);
+            if (ex == null)
+                Sessions.Broadcast(responseJson);
+            else
+                Sessions.Broadcast($"{ex.Message}");
         }
 
         protected override void OnClose(CloseEventArgs e)
