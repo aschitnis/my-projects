@@ -40,9 +40,9 @@ namespace Demo.Ws.Server.socket.services
             {
                 try
                 {
-                    await socket.ConnectAsync(new Uri(Connection), CancellationToken.None);
+                    await socket.ConnectAsync(new Uri("https://api.currencyscoop.com/v1/latest?base=INR&api_key=e765634f4c80f76ea733e1e5da897a39"), CancellationToken.None);
 
-                    await api.Send("")
+                    await api.Send(socket,)
                     //await Receive(socket);
 
                 }
