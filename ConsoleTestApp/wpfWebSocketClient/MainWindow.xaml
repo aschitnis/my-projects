@@ -1,0 +1,24 @@
+﻿<Window x:Class="wpf.websocket.client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf.websocket.client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="850">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Margin="5" Padding="5" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" ItemsSource="{Binding Path=CurrenciesNames}" SelectedItem="{Binding SelectedCurrencyName}"></ComboBox>
+        <Button Margin="5" Padding="5" Grid.Row="0" Grid.Column="0" Click="Button_Click" />
+    </Grid>
+</Window>

@@ -76,6 +76,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWebSocketServer", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWebSocketClient", "ConsoleWebSocketClient\ConsoleWebSocketClient.csproj", "{EC08D4ED-40C1-47C3-BF12-D52974898BDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpfWebSocketClient", "wpfWebSocketClient\wpfWebSocketClient.csproj", "{AB38CC39-4B8A-498A-B407-A3A8E43742D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -198,6 +200,10 @@ Global
 		{EC08D4ED-40C1-47C3-BF12-D52974898BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC08D4ED-40C1-47C3-BF12-D52974898BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC08D4ED-40C1-47C3-BF12-D52974898BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB38CC39-4B8A-498A-B407-A3A8E43742D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB38CC39-4B8A-498A-B407-A3A8E43742D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB38CC39-4B8A-498A-B407-A3A8E43742D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB38CC39-4B8A-498A-B407-A3A8E43742D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +228,7 @@ Global
 		{8ACC35F0-08DF-4CB3-B30C-35A1A3050CC7} = {2691E25A-E1D3-4191-BD4F-AB8283EDE339}
 		{6F59B35F-4B50-471F-BF57-79AB24AF1C5A} = {DB602253-3900-4BB6-BF58-F64052763DBA}
 		{EC08D4ED-40C1-47C3-BF12-D52974898BDD} = {DB602253-3900-4BB6-BF58-F64052763DBA}
+		{AB38CC39-4B8A-498A-B407-A3A8E43742D7} = {DB602253-3900-4BB6-BF58-F64052763DBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B02F975-BCFF-4C25-8D93-D5AD52D98649}

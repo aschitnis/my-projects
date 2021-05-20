@@ -1,0 +1,16 @@
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\bin\Release\wpfWebSocketClient.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\bin\Release\wpfWebSocketClient.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\bin\Release\wpfWebSocketClient.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\MainWindow.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\App.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient_MarkupCompile.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient_MarkupCompile.lref
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\MainWindow.baml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient.g.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpf.websocket.client.Properties.Resources.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient.csproj.GenerateResource.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\bin\Release\websocket-sharp.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\wpfWebSocketClient\obj\Release\wpfWebSocketClient.csproj.CopyComplete
