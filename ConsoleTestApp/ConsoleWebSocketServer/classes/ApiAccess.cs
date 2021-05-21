@@ -21,7 +21,7 @@ namespace Demo.Ws.Server.classes
     // user : abhijit , aschitnis@hotmail.com
     // password : elfriede51
     // link : https://currencyscoop.com/login
-    // z.b. https://api.currencyscoop.com/v1/latest?base=INR&api_key=e765634f4c80f76ea733e1e5da897a39
+    // z.b. https://api.currencyscoop.com/v1/latest?base=INR&api_key=e765634f4c80f76ea733e1e5da897a39 
     public class ApiAccess : BaseApiAccess
     {
         public Exception GetAllCurrencyExchangeRatesAsJsonString(string basecurrency, out string responsestring)

@@ -20,7 +20,7 @@ namespace ConsoleWebSocketClient
                 ws.Connect();
 
                 ws.Send("INR");
-
+                
                 Console.ReadKey();
             }
         }

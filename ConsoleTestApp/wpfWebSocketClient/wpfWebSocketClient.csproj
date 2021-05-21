@@ -62,6 +62,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="classes\ApiServicePath.cs" />
+    <Compile Include="classes\ClientSocketSingleton.cs" />
     <Compile Include="classes\Currency.cs" />
     <Compile Include="classes\ViewModelBase.cs" />
     <Compile Include="SocketViewModel.cs" />
