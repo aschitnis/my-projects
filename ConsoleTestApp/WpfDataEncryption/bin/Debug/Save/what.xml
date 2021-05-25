@@ -4,7 +4,7 @@
 <topic name="irctc">
 <user name="transdatix" password="null!">
 <addtdata></addtdata>
-<securitydata>testing</securitydata>
+<securitydata></securitydata>
 <web></web>
 </user>
 </topic>
@@ -36,7 +36,9 @@
 <topic name="salzburgag_online_login">
 <user name="khg_elfi@hotmail.com" password="Abhijiti71!">
 <addtdata></addtdata>
-<securitydata>Startup passwort: $M4Pk@iVsAdq</securitydata>
+<securitydata>
+	Startup passwort: $M4Pk@iVsAdq
+</securitydata>
 <web>meine.salzburg-ag.at</web>
 </user>
 </topic>
@@ -69,7 +71,6 @@
 <cvv>772</cvv>
 <pin>5186</pin>
 <valid>10/24</valid>
-<nameoncard>ABHIJIT S CHITNIS</nameoncard>
 </debitcard>
 <securitydata>
 gefragtes kennwort:elfriede, benutzer:aschitnis974 
@@ -136,7 +137,7 @@ gefragtes Kennwort(online kauf): elfriede  Benutzer: aschitnis974
 </user>
 </topic>
 <topic name="gmail / youtube">
-<user name="chitnis.abhijit.sbg@gmail.com" password="Elfriede31">
+<user name="chitnis.abhijit.sbg@gmail.com" password="elfriede51">
 <addtdata></addtdata>
 <securitydata></securitydata>
 <web></web>
@@ -219,7 +220,7 @@ gefragtes Kennwort(online kauf): elfriede  Benutzer: aschitnis974
 <topic name="mastercard/paylife">
 <user name="...." password="....">
 <addtdata>gültig bis: 01/25
-mit dem obengennanten <PIN>Pin</PIN>PIN> identifizieren Sie sich 
+mit dem obengennanten PIN identifizieren Sie sich 
 bei Geldausgabeautomaten, POs-terminals und Selbstbedienungsautomaten
 als berechtigter Karteninhaber.
 </addtdata>
@@ -250,14 +251,13 @@ Online Zahlungen (3D Secure Verfahren):
 <topic name="magenta">
 <user name="6506514370" password="Elfriede51Abhijiti">
 <addtdata>telering heißt jetzt magenta</addtdata>
-<securitydata></securitydata>
-<extrasecuritydata>
+<securitydata>
 <nr></nr>
 <kundenkennwort></kundenkennwort>
 <kundennummer>1.14799915</kundennummer>
 <pin>(Bildschirm entsperren):8855</pin>
 <puk>18468970</puk>
-</extrasecuritydata>
+</securitydata>
 <web>https://www.magenta.at/hilfe-service/mein-magenta</web>
 </user>
 </topic>
@@ -313,13 +313,6 @@ Online Zahlungen (3D Secure Verfahren):
 <topic name="ebay">
 <user name="aschitnis@hotmail" password="elfriede52">
 <addtdata></addtdata>
-<securitydata></securitydata>
-<web></web>
-</user>
-</topic>
-<topic name="github">
-<user name="aschitnis@hotmail.com" password="Elfriede51">
-<addtdata>second user: chitnis.abhijit.sbg@gmail.com  password: Elfriede51</addtdata>
 <securitydata></securitydata>
 <web></web>
 </user>

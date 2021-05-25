@@ -50,9 +50,13 @@ namespace WpfDataEncryption.viewmodels
                         
                         XmlManager xmlManager = new XmlManager();
                         Exception ex = xmlManager.DeserializeXml(xml);
-                        // xmlManager.XmlDataObject
+
+                        var original = xmlManager.GetXmlObject();
+                        var o = xmlManager.GetXmlObjectClone();
+                        o.TopicsList.Clear();
+
                      }
-                    catch
+                    catch (Exception e)
                     {
 
                     }

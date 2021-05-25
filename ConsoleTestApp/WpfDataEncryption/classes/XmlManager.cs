@@ -14,8 +14,8 @@ namespace WpfDataEncryption.classes
 {
     internal sealed class XmlManager
     {
-        public XmlObjectModel XmlDeserializedObject { get; private set; }
-        public string XmlSerializedString { get; private set; }
+        public XmlObjectModel XmlDeserializedObject { get; set; }
+        private string XmlSerializedString { get; set; }
 
         public XmlManager() { }
 
@@ -55,6 +55,15 @@ namespace WpfDataEncryption.classes
                 return e;
             }
             return null;
+        }
+
+        internal XmlObjectModel GetXmlObject()
+        {
+            return XmlDeserializedObject;
+        }
+        internal XmlObjectModel GetXmlClonedObject()
+        {
+            return (XmlObjectModel)XmlDeserializedObject.Clone();
         }
     }
 }
