@@ -8,16 +8,49 @@ using System.Xml.Serialization;
 using WpfDataEncryption.classes.helpers;
 
 /// <summary>
-/// This class encapsulates/calls the serialize & deserialize functions from the XmlHelper static class.
+/// This class encapsulates/calls the serialize & deserialize functions from the XmlHelper static class. 
+/// The class is implemented as a Singleton pattern because only 1 instance of the Xml data has to exist in memory whilst the application is running.
 /// </summary>
 namespace WpfDataEncryption.classes
 {
-    internal sealed class XmlManager
+    public class XmlManager
     {
-        public XmlObjectModel XmlDeserializedObject { get; set; }
+        private static XmlManager _instance;
+        private XmlObjectModel xmldata;
         private string XmlSerializedString { get; set; }
+        public XmlObjectModel XmlData
+        {
+            get
+            {
+                if (xmldata == null)
+                    xmldata = new XmlObjectModel();
+                return xmldata;
+            }
+        }
 
-        public XmlManager() { }
+        private XmlManager() 
+        {
+            xmldata = new XmlObjectModel();
+        }
+
+        // Lock synchronization object
+        private static object syncLock = new object();
+
+        public static XmlManager GetXmlManager()
+        {
+            // Support multithreaded applications through 'Double checked locking' pattern which (once the instance exists) avoids locking each time the method is invoked
+            if (_instance == null)
+            {
+                lock (syncLock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = new XmlManager();
+                    }
+                }
+            }
+            return _instance;
+        }
 
         /// <summary>
         /// 
@@ -28,12 +61,12 @@ namespace WpfDataEncryption.classes
         {
             try
             {
-                XmlDeserializedObject = XmlHelper.DeserializeFromString<XmlObjectModel>(xml);
+                xmldata = XmlHelper.DeserializeFromString<XmlObjectModel>(xml);
                 return null;
             }
             catch(Exception e)
             {
-                XmlDeserializedObject = null;
+                xmldata = null;
                 return e;
             }
         }
@@ -57,13 +90,13 @@ namespace WpfDataEncryption.classes
             return null;
         }
 
-        internal XmlObjectModel GetXmlObject()
-        {
-            return XmlDeserializedObject;
-        }
+        //internal XmlObjectModel GetXmlObject()
+        //{
+        //    return xmldata;
+        //}
         internal XmlObjectModel GetXmlClonedObject()
         {
-            return (XmlObjectModel)XmlDeserializedObject.Clone();
+            return (XmlObjectModel)xmldata.Clone();
         }
     }
 }

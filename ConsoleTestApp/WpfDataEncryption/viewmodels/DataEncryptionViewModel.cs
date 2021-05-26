@@ -8,12 +8,12 @@ using WpfDataEncryption.classes;
 
 namespace WpfDataEncryption.viewmodels
 {
-    public class EncryptionViewModel
+    public class DataEncryptionViewModel
     {
         private bool isEncryptedFileExists = true;
         private bool isPlainTextFileExists = true;
 
-        public EncryptionViewModel()
+        public DataEncryptionViewModel()
         {
             isEncryptedFileExists = File.Exists(PathManager.FILE_Data_Encrypted);
             isPlainTextFileExists = File.Exists(PathManager.FILE_Data_Plaintext);
@@ -52,7 +52,7 @@ namespace WpfDataEncryption.viewmodels
                         Exception ex = xmlManager.DeserializeXml(xml);
 
                         var original = xmlManager.GetXmlObject();
-                        var o = xmlManager.GetXmlObjectClone();
+                        var o = xmlManager.GetXmlClonedObject();
                         o.TopicsList.Clear();
 
                      }

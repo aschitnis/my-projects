@@ -2,25 +2,22 @@
 <data>
 <topics>
 <topic name="irctc">
-<user name="transdatix" password="null!">
+<user name="transdatix" password="null!"/>
 <addtdata></addtdata>
 <securitydata></securitydata>
 <web></web>
-</user>
 </topic>
 <topic name="dgh_google">
-<user name="abhijit.chitnis@proschlaf.eu" password="elfriede51">
+<user name="abhijit.chitnis@proschlaf.eu" password="elfriede51"/>
 <addtdata></addtdata>
 <securitydata></securitydata>
 <web></web>
-</user>
 </topic>
 <topic name="dgh_zeiterfassung">
-<user name="Chitnis Abhijit" password="abhijiti51">
+<user name="Chitnis Abhijit" password="abhijiti51"/>
 <addtdata></addtdata>
 <securitydata></securitydata>
 <web>https://zsw.finkzeit.at/webterm?lic=gesundheitshaus_salzburg</web>
-</user>
 </topic>
 <topic name="salzburgag_information">
 <user name="keine" password="keine">
@@ -220,7 +217,7 @@ gefragtes Kennwort(online kauf): elfriede  Benutzer: aschitnis974
 <topic name="mastercard/paylife">
 <user name="...." password="....">
 <addtdata>gültig bis: 01/25
-mit dem obengennanten PIN identifizieren Sie sich 
+mit dem obengennanten <PIN>Pin</PIN>PIN> identifizieren Sie sich 
 bei Geldausgabeautomaten, POs-terminals und Selbstbedienungsautomaten
 als berechtigter Karteninhaber.
 </addtdata>
@@ -237,14 +234,13 @@ Online Zahlungen (3D Secure Verfahren):
 <topic name="Elfi/3Mobil">
 <user name="aschitnis" password="Abhijiti71">
 <addtdata>Kundenkennwort vergessen: 0660 303030 anrufen</addtdata>
-<securitydata></securitydata>
-<extrasecuritydata>
+<securitydata>
 <nr>6504056003</nr>
 <kundenkennwort>krbecek (notiert am 02.12.2019. Stimmt wahrscheinlich nicht)</kundenkennwort>
 <pin>(Bildschirm entsperren):090271</pin>
 <zusatzpin>(die Funktion dieses PIN ist unbekannt)3151</zusatzpin>
 <puk>48597587</puk>
-</extrasecuritydata>
+</securitydata>
 <web>www.drei.at</web>
 </user>
 </topic>

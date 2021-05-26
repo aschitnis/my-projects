@@ -7,6 +7,13 @@ using System.Xml.Serialization;
 
 namespace WpfDataEncryption.classes
 {
+
+    /// <summary>
+    // ICloneable:MemberwiseClone()
+    //  - If a field is a reference type, then the only reference is copied not the referred object.
+    //      So here, the cloned object and the original object will refer to the same object.
+    //  - If the field is value type then the bit-by-bit copy of the field will be performed.
+   /// </summary>
     [XmlRoot("data")]
     public class XmlObjectModel : ICloneable
     {
