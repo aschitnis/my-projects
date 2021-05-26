@@ -30,7 +30,6 @@ namespace WpfDataEncryption
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             DataEncryptionViewModel vm = new DataEncryptionViewModel();
-            vm.CloneObject<>
         }
     }
 }

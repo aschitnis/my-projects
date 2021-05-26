@@ -9,49 +9,52 @@ using System.IO;
 
 namespace WpfDataEncryption.classes
 {
-    internal class ModelsContainer : ViewModelBase
+    internal class XmlObjectContainer : ViewModelBase
     {
         private List<TopicModel> _topics;
         private List<TopicModel> _filteredtopics;
-       // private XmlManager xmlDataManager { get; } = new XmlManager();
-        private XmlObjectModel xmlModel { get; set; }
+
+        public XmlObjectModel XmlDeserializedModel { get; private set; }
 
         public List<TopicModel> Topics
         { get => _topics ?? new List<TopicModel>(); private set => SetProperty(ref _topics, value); }
         public List<TopicModel> FilteredTopics { get => _filteredtopics ?? new List<TopicModel>(); set => SetProperty(ref _filteredtopics, value); }
         
-        public ModelsContainer() 
+        public XmlObjectContainer() 
         {
-            xmlModel = XmlManager.GetXmlManager().XmlData;
+            XmlDeserializedModel = XmlManager.GetXmlManager().XmlData;
         }
 
         /// <summary>
-        /// 1) deserialize xml string into a object
-        /// 2) get the xml object data.
+        /// 1) check if the encrypted or plaintext xml file exists under the path.
+        /// 2) deserialize xml string into a object
+        /// 3) get the xml object data.
         /// </summary>
         /// <param name="isencryptedfileexists">whether only a encrypted version of the xml file exists (*.aes)</param>
         /// <param name="nofilefound"></param>
         /// <returns></returns>
-        private Exception GetXmlData(bool isencryptedfileexists, bool nofilefound = true)
+        public Exception GetData()
         {
-            if (nofilefound)
-                return new Exception("Neither *.aes nor *.xml file exists!. The Processing is terminated.");
-
             Exception ex = null;
-            if (isencryptedfileexists)
+            if (File.Exists(PathManager.FILE_Data_Encrypted) == true)
+            {
                 ex = DeserializeEncryptedXmlToDataObject(); // decrypt xml string & it deserialize into object
-            else ex = DeserializeXmlToDataObject();        // deserialize xml string into object
+            }
+            else if (File.Exists(PathManager.FILE_Data_Plaintext) == true)
+            {
+                ex = DeserializeXmlToDataObject();        // deserialize xml string into object
+            }
+            else
+            {
+                return new Exception("Neither *.aes nor *.xml file exists!. The Processing is terminated.");
+            }
 
             if (ex != null)
                 return ex;
 
-            xmlModel = XmlManager.GetXmlManager().XmlData; //xmlDataManager.GetXmlClonedObject();
+            XmlDeserializedModel = XmlManager.GetXmlManager().XmlData; //xmlDataManager.GetXmlClonedObject();
+
             return null;
-        }
-
-        private void Fill()
-        {
-
         }
 
         private Exception DeserializeEncryptedXmlToDataObject()
@@ -85,9 +88,11 @@ namespace WpfDataEncryption.classes
             string xml = File.ReadAllText(PathManager.FILE_Data_Plaintext, Constants.DEFAULT_FILE_ENCODING);
 
             Security.EncryptStringToFile(PathManager.FILE_Data_Encrypted, xml, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
-            xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), encoding, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
+            xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
 
             ex = XmlManager.GetXmlManager().DeserializeXml(xml);
+            if (ex != null)
+                File.Delete(PathManager.FILE_Data_Encrypted);
             return ex;
         }
     }
