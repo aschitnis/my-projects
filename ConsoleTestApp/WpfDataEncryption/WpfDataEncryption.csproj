@@ -57,14 +57,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="classes\CustomExtensions.cs" />
-    <Compile Include="classes\DataContainer.cs" />
+    <Compile Include="classes\XmlObjectContainer.cs" />
     <Compile Include="classes\helpers\XmlHelper.cs" />
     <Compile Include="classes\PasswordManager.cs" />
     <Compile Include="classes\Security.cs" />
     <Compile Include="classes\XmlManager.cs" />
     <Compile Include="classes\XmlObjectModel.cs" />
     <Compile Include="models\PrivateDataModels.cs" />
-    <Compile Include="viewmodels\EncryptionViewModel.cs" />
+    <Compile Include="viewmodels\DataEncryptionViewModel.cs" />
     <Compile Include="viewmodels\ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

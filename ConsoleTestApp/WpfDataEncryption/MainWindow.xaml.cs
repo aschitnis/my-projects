@@ -29,8 +29,7 @@ namespace WpfDataEncryption
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            EncryptionViewModel vm = new EncryptionViewModel();
-            
+            DataEncryptionViewModel vm = new DataEncryptionViewModel();
         }
     }
 }
