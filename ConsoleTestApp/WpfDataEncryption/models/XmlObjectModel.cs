@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace WpfDataEncryption.classes
+namespace WpfDataEncryption.models
 {
 
     /// <summary>
@@ -19,13 +19,13 @@ namespace WpfDataEncryption.classes
     {
         [XmlArray("topics")]
         [XmlArrayItem("topic")]
-        public Topics TopicsList { get; set; }
+        public XmlTopics TopicsList { get; set; }
 
         public virtual object Clone()
         {
             XmlObjectModel result = (XmlObjectModel)this.MemberwiseClone();
-            XmlObjectModel clonedResult = new XmlObjectModel(new Topics());
-            result.TopicsList.ForEach(t => { clonedResult.TopicsList.Add(t.Clone() as Topic); });
+            XmlObjectModel clonedResult = new XmlObjectModel(new XmlTopics());
+            result.TopicsList.ForEach(t => { clonedResult.TopicsList.Add(t.Clone() as XmlTopic); });
             
             //XmlObjectModel clonedResult = new XmlObjectModel(new Topics().ForEach( Topic));
             //clonedResult.TopicsList = new Topics();
@@ -42,30 +42,30 @@ namespace WpfDataEncryption.classes
 
         public XmlObjectModel() { }
 
-        public XmlObjectModel(Topics topics)
+        public XmlObjectModel(XmlTopics topics)
         {
             TopicsList = topics;
         }
     }
 
 
-    public class Topics : List<Topic>  {}
+    public class XmlTopics : List<XmlTopic>  {}
 
-    public class Topic : ICloneable
+    public class XmlTopic : ICloneable
     {
         [XmlAttribute("name")]
         public string Name { get; set; }
         [XmlElement("user")]
-        public User User { get; set; }
+        public XmlUser User { get; set; }
         public virtual object Clone()
         {
-            Topic topic = (Topic)this.MemberwiseClone();
+            XmlTopic topic = (XmlTopic)this.MemberwiseClone();
             //topic.User = (User)topic.User.Clone();
             return topic;
         }
     }
 
-    public class User : ICloneable
+    public class XmlUser : ICloneable
     {
         [XmlAttribute("name")]
         public string Name { get; set; }
@@ -79,7 +79,7 @@ namespace WpfDataEncryption.classes
         [XmlElement("web")]
         public string Weblink { get; set; }
         [XmlElement("extrasecuritydata")]
-        public ExtraSecurityData AdditionalSecurityData { get; set; }
+        public XmlExtraSecurityData AdditionalSecurityData { get; set; }
         //[XmlElement("debitcard")]
         //public string DebitCard { get; set; }
         //[XmlElement("branchDetails")]
@@ -87,13 +87,13 @@ namespace WpfDataEncryption.classes
 
         public virtual object Clone()
         {
-            User usr = (User)this.MemberwiseClone();
+            XmlUser usr = (XmlUser)this.MemberwiseClone();
             // usr.AdditionalSecurityData = (ExtraSecurityData)usr.AdditionalSecurityData.Clone();
             return usr;
         }
     }
 
-    public class BranchDetails
+    public class XmlBranchDetails
     {
         [XmlElement("branchPhone")]
         public string Telefon { get; set; }
@@ -105,7 +105,7 @@ namespace WpfDataEncryption.classes
         public string Address { get; set; }
     }
 
-    public class ExtraSecurityData : ICloneable
+    public class XmlExtraSecurityData : ICloneable
     {
         [XmlElement("nr")]
         public string Number { get; set; }
@@ -119,7 +119,7 @@ namespace WpfDataEncryption.classes
         public string Puk { get; set; }
         public virtual object Clone()
         {
-            ExtraSecurityData addtdata = (ExtraSecurityData)this.MemberwiseClone();
+            XmlExtraSecurityData addtdata = (XmlExtraSecurityData)this.MemberwiseClone();
             return addtdata;
         }
     }
