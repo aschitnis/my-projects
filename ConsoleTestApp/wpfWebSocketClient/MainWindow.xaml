@@ -16,9 +16,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <ComboBox Margin="5" Padding="5" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" FontSize="18" ItemsSource="{Binding Path=CurrenciesNames}" SelectedItem="{Binding SelectedCurrencyName}"></ComboBox>
         <Button Margin="5" Padding="5" Grid.Row="0" Grid.Column="0" Click="Button_Click" />
+        <TextBlock Text="{Binding Path=SocketStatusMessage}" Grid.Column="0" Padding="4" VerticalAlignment="Center" Grid.ColumnSpan="4" Grid.Row="2" FontSize="16"/>
     </Grid>
 </Window>

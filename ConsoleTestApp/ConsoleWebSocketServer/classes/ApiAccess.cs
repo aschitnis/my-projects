@@ -14,7 +14,7 @@ namespace Demo.Ws.Server.classes
     {
         public enum Endpoint { LatestAllCurrenciesRates }
         protected string CurrencyBaseUrl { get => "https://api.currencyscoop.com/v1"; }
-        protected string CURRENCY_API_KEY { get => "e765634f4c80f76ea733e1e5da897a39"; }
+        protected string CURRENCY_API_KEY { get => "e765634f4c80f76ea733e1e5da897a39"; }   
     }
 
     // api-key:  e765634f4c80f76ea733e1e5da897a39

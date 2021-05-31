@@ -15,8 +15,17 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button Grid.Column="0" Grid.Row="0" Content="Show" Click="Button_Click"></Button>
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Background="Yellow" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="{Binding Path=SocketStatusMessage}" Grid.Row="3" FontSize="16"></TextBlock>
+        </Grid>
     </Grid>
 </Window>
