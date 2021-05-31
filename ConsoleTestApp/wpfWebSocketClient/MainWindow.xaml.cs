@@ -34,7 +34,8 @@ namespace wpf.websocket.client
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SocketVM.SendToSocketServer();
+            SocketVM.ConnectAsyncToSocketServer();
+ 
            //string code = SocketVM.GetSelectedCurrencyCode();
         }
     }

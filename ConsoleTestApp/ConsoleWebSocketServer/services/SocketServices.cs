@@ -37,6 +37,7 @@ namespace Demo.Ws.Server.socket.services
             string responseJson = null;
             //Console.WriteLine($"{e.Data}");
             Exception ex = api.GetAllCurrencyExchangeRatesAsJsonString(e.Data, out responseJson);
+            Console.WriteLine(responseJson);
             if (ex == null)
                 Sessions.Broadcast(responseJson);
             else

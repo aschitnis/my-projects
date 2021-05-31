@@ -22,7 +22,7 @@ namespace WpfDataEncryption.classes
         
         public XmlObjectContainer() 
         {
-            XmlDeserializedModel = XmlManager.GetXmlManager().XmlData;
+            XmlDeserializedModel = XmlSingletonManager.GetXmlManager().XmlData;
         }
 
         /// <summary>
@@ -36,64 +36,42 @@ namespace WpfDataEncryption.classes
         public Exception GetData()
         {
             Exception ex = null;
-            if (File.Exists(PathManager.FILE_Data_Encrypted) == true)
+            XmlSingletonManager singletonXmlManager = XmlSingletonManager.GetXmlManager();
+
+            if (File.Exists(PathManager.FILE_Data_Encrypted) == true)   // code for encrypted Xml file.
             {
-                ex = DeserializeEncryptedXmlToDataObject(); // decrypt xml string & it deserialize into object
+                ex = singletonXmlManager.DeserializeEncryptedXmlToDataObject();
+                
+                if (ex == null)
+                {
+                    XmlDeserializedModel = singletonXmlManager.GetXmlObject();
+                }
+                return ex;
             }
-            else if (File.Exists(PathManager.FILE_Data_Plaintext) == true)
+            else if (File.Exists(PathManager.FILE_Data_Plaintext) == true)  // code for Plaintext Xml file.
             {
-                ex = DeserializeXmlToDataObject();        // deserialize xml string into object
+                string xml = File.ReadAllText(PathManager.FILE_Data_Plaintext, Constants.DEFAULT_FILE_ENCODING);
+                ex = singletonXmlManager.DeserializeXmlToDataObject(xml);   // deserialize xml string into object
+
+                // if a exception is thrown then check if a encrypted file exists. If YES then delete .AES file.
+                if (ex != null)
+                {
+                    if (File.Exists(PathManager.FILE_Data_Encrypted))
+                        File.Delete(PathManager.FILE_Data_Encrypted);
+                }
+                // If there were no Exceptions found, get the deserialized Xml Object, then delete the plaintext file.
+                if (ex == null)
+                {
+                    XmlDeserializedModel = singletonXmlManager.GetXmlObject();
+                    if (File.Exists(PathManager.FILE_Data_Plaintext))
+                        File.Delete(PathManager.FILE_Data_Plaintext);
+                }
+                return ex;
             }
             else
             {
                 return new Exception("Neither *.aes nor *.xml file exists!. The Processing is terminated.");
             }
-
-            if (ex != null)
-                return ex;
-
-            XmlDeserializedModel = XmlManager.GetXmlManager().XmlData; //xmlDataManager.GetXmlClonedObject();
-
-            return null;
-        }
-
-        private Exception DeserializeEncryptedXmlToDataObject()
-        {
-            string xml = null;
-            Exception ex = null;
-
-            try
-            {
-                xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
-            }
-            catch(Exception e)
-            {
-                xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Encoding.Default, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
-                return e;
-            }
-
-            ex = XmlManager.GetXmlManager().DeserializeXml(xml);
-            return ex;
-        }
-        /// <summary>
-        /// The xml file is in plaintext (*.xml). 
-        /// a) Read the file into a String, encrypt the String & save the String to a file (*.aes).
-        /// b) Decrypt the encrypted file & read the data into a String.
-        /// c) Deserialize the (Xml)String to a Object.
-        /// </summary>
-        /// <returns></returns>
-        private Exception DeserializeXmlToDataObject()
-        {
-            Exception ex = null;
-            string xml = File.ReadAllText(PathManager.FILE_Data_Plaintext, Constants.DEFAULT_FILE_ENCODING);
-
-            Security.EncryptStringToFile(PathManager.FILE_Data_Encrypted, xml, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
-            xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
-
-            ex = XmlManager.GetXmlManager().DeserializeXml(xml);
-            if (ex != null)
-                File.Delete(PathManager.FILE_Data_Encrypted);
-            return ex;
         }
     }
 }

@@ -7,9 +7,9 @@ using WpfDataEncryption.Properties;
 
 namespace WpfDataEncryption.classes
 {
-    internal abstract class PasswordManager
+    public abstract class PasswordManager
     {
-        public static string GetPersonalDatabaseEncryptionPassword()
+        internal static string GetPersonalDatabaseEncryptionPassword()
         {
             if (string.IsNullOrEmpty(Settings.Default.PersonalDataEncryptionPassword))
             {

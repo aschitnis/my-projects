@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using WpfDataEncryption.classes.helpers;
+using WpfDataEncryption.models;
 
 /// <summary>
 /// This class encapsulates/calls the serialize & deserialize functions from the XmlHelper static class. 
@@ -13,9 +14,9 @@ using WpfDataEncryption.classes.helpers;
 /// </summary>
 namespace WpfDataEncryption.classes
 {
-    public class XmlManager
+    public class XmlSingletonManager
     {
-        private static XmlManager _instance;
+        private static XmlSingletonManager _instance;
         private XmlObjectModel xmldata;
         private string XmlSerializedString { get; set; }
         public XmlObjectModel XmlData
@@ -28,7 +29,7 @@ namespace WpfDataEncryption.classes
             }
         }
 
-        private XmlManager() 
+        private XmlSingletonManager() 
         {
             xmldata = new XmlObjectModel();
         }
@@ -36,7 +37,7 @@ namespace WpfDataEncryption.classes
         // Lock synchronization object
         private static object syncLock = new object();
 
-        public static XmlManager GetXmlManager()
+        public static XmlSingletonManager GetXmlManager()
         {
             // Support multithreaded applications through 'Double checked locking' pattern which (once the instance exists) avoids locking each time the method is invoked
             if (_instance == null)
@@ -45,7 +46,7 @@ namespace WpfDataEncryption.classes
                 {
                     if (_instance == null)
                     {
-                        _instance = new XmlManager();
+                        _instance = new XmlSingletonManager();
                     }
                 }
             }
@@ -53,20 +54,50 @@ namespace WpfDataEncryption.classes
         }
 
         /// <summary>
-        /// 
+        /// a) Encrypt the xml data and save it to a xml file.
+        /// b) decrypt the xml data. 
+        /// c) deserialize the xml data(String) to a object.
         /// </summary>
-        /// <param name="xml">the xml string to be deserialized into a object</param>
+        /// <param name="xml">the xml string data</param>
         /// <returns>Exception object. If no errors then the exception Object return NULL</returns>
-        internal Exception DeserializeXml(string xml)
+        internal Exception DeserializeXmlToDataObject(string xml)
         {
             try
             {
+               // xml = File.ReadAllText(PathManager.FILE_Data_Plaintext, Constants.DEFAULT_FILE_ENCODING);
+
+                Security.EncryptStringToFile(PathManager.FILE_Data_Encrypted, xml, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
+                xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
+
                 xmldata = XmlHelper.DeserializeFromString<XmlObjectModel>(xml);
                 return null;
             }
             catch(Exception e)
             {
                 xmldata = null;
+                return e;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        internal Exception DeserializeEncryptedXmlToDataObject()
+        {
+            string xml = null;
+            Exception ex = null;
+
+            try
+            {
+                xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Constants.DEFAULT_FILE_ENCODING, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
+                xmldata = XmlHelper.DeserializeFromString<XmlObjectModel>(xml);
+                return null;
+            }
+            catch (Exception e)
+            {
+                xmldata = null;
+                //xml = Security.DecryptFileToString(PathManager.FILE_Data_Encrypted, PasswordManager.GetPersonalDatabaseEncryptionPassword(), Encoding.Default, Constants.PERSONAL_DATA_ENCRYPTION_SALT, Constants.ENCRYPTION_INIT_VECTOR);
                 return e;
             }
         }
@@ -90,10 +121,11 @@ namespace WpfDataEncryption.classes
             return null;
         }
 
-        //internal XmlObjectModel GetXmlObject()
-        //{
-        //    return xmldata;
-        //}
+        internal XmlObjectModel GetXmlObject()
+        {
+            return xmldata;
+        }
+
         internal XmlObjectModel GetXmlClonedObject()
         {
             return (XmlObjectModel)xmldata.Clone();
