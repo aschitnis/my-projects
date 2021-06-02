@@ -1,7 +1,7 @@
 <CONFIG>
-<startupxaml>MainWindowPlz.xaml</startupxaml>
-<jsonfile>C:\Users\Mustermann\source\repos\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\postleitzahl.json</jsonfile>
-<hubstatfolder>C:\Users\Mustermann\source\repos\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\HUBSTAT09077561</hubstatfolder>
-<hubstatxmlconfig>C:\Users\Mustermann\source\repos\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\hubmap.xml</hubstatxmlconfig>
-<bundxmldata>C:\Users\Mustermann\source\repos\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\XAT.xml</bundxmldata>
+<startupxaml>MainWindow.xaml</startupxaml>
+<jsonfile>C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\postleitzahl.json</jsonfile>
+<hubstatfolder>C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\HUBSTAT09077561</hubstatfolder>
+<hubstatxmlconfig>C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\hubmap.xml</hubstatxmlconfig>
+<bundxmldata>C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\WpfNestedGridApp\BeispielDaten\XAT.xml</bundxmldata>
 </CONFIG>
