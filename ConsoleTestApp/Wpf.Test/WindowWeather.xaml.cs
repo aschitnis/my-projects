@@ -40,13 +40,11 @@ namespace Wpf.Test
 
         private void WindowWeather_LongRunningTaskEvent(object sender, ulong e)
         {
-           DispatcherOperation d = tbMessage.Dispatcher.BeginInvoke((Action)(() => { tbMessage.Text = Convert.ToString(e); }));
-            d.Completed += delegate (object s, EventArgs a) {  };
-        }
-
-        private void D_Completed(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
+           DispatcherOperation d = tbMessage.Dispatcher.BeginInvoke(
+                                    (Action)(() => { 
+                                                    tbMessage.Text = Convert.ToString(e); 
+                                                   }));
+           d.Completed += delegate (object s, EventArgs a) {  };
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -55,7 +53,6 @@ namespace Wpf.Test
                                {
                                    ulong parameterNumber = 7444854523;
                                    GetAllPrimes(parameterNumber);
-                                   //tbMessage.Dispatcher.BeginInvoke(new LongRunningTask(GetAllPrimes), System.Windows.Threading.DispatcherPriority.Normal, parameterNumber);
                                });
         }
 
