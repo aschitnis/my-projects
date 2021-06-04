@@ -123,8 +123,8 @@
     <Compile Include="my.weather\models\json\JsonHelperConverter.cs" />
     <Compile Include="my.weather\models\json\JsonWeather.cs" />
     <Compile Include="my.weather\models\json\JsonWeatherApiError.cs" />
-    <Compile Include="my.weather\models\json\JsonScheduler.cs" />
-    <Compile Include="my.weather\models\Weather.cs" />
+    <Compile Include="my.weather\models\json\JsonSchedulerModel.cs" />
+    <Compile Include="my.weather\models\WeatherModel.cs" />
     <Compile Include="my.weather\viewmodels\WeatherViewModel.cs" />
     <Compile Include="MyCollection.cs" />
     <Compile Include="TestLogger.cs" />

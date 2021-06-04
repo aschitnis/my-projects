@@ -49,11 +49,12 @@ namespace Wpf.Test
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Task.Factory.StartNew(() =>
-                               {
-                                   ulong parameterNumber = 7444854523;
-                                   GetAllPrimes(parameterNumber);
-                               });
+            WeatherVM.StartScheduler();
+            //Task.Factory.StartNew(() =>
+            //                   {
+            //                       ulong parameterNumber = 7444854523;
+            //                       GetAllPrimes(parameterNumber);
+            //                   });
         }
 
         public void GetAllPrimes(ulong inputnumber)

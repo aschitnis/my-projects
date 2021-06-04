@@ -28,7 +28,7 @@ Sunrise                 sys.sunrise
 Sunset                  sys.sunset 
 CurrentTime
      * **/
-    public class Weather : INotifyPropertyChanged
+    public class WeatherModel : INotifyPropertyChanged
     {
         private string _city;
         private double _latitude;
@@ -49,9 +49,9 @@ CurrentTime
         public double MaxTemperature { get { return _maxtemperature; } set { _maxtemperature = value; OnPropertyChanged(); } }
 
         #region Constructors
-        public Weather() { }
+        public WeatherModel() { }
         // Instance Constructor
-        public Weather(string city,double latitude,double longitude, string description, double currenttemperature,double feelsliketemperature,double mintemperature, double maxtemperature) 
+        public WeatherModel(string city,double latitude,double longitude, string description, double currenttemperature,double feelsliketemperature,double mintemperature, double maxtemperature) 
         {
             this.City = city;
             this.Latitude = latitude;
@@ -64,16 +64,16 @@ CurrentTime
         }
         
         // Copy constructor
-        public Weather(JsonWeather jsonweather)
+        public WeatherModel(JsonWeather jsonweather)
                     :this(jsonweather.City,jsonweather.Latitude,jsonweather.Longitude,jsonweather.Description,jsonweather.CurrentTemperature,jsonweather.FeelsLikeTemperature,jsonweather.MinTemperature,jsonweather.MaxTemperature)
         {
 
         }
         #endregion
 
-        public static implicit operator Weather(JsonWeather jsonmodel)
+        public static implicit operator WeatherModel(JsonWeather jsonmodel)
         {
-            Weather w = new Weather(jsonmodel);
+            WeatherModel w = new WeatherModel(jsonmodel);
             return w;
         }
 

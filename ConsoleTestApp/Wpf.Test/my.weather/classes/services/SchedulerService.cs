@@ -17,7 +17,7 @@ namespace Wpf.Test.my.weather.classes.services
         private SchedulerService() { }
         #endregion
 
-        public void ScheduleTaskWithInterval(int hour, int min, double intervalInHour, Action<string> task, string parameter)
+        public void ScheduleTaskWithInterval(int hour, int min, double intervalinminutes, double intervalinseconds, Action<string> task, string parameter)
         {
             DateTime now = DateTime.Now;
             DateTime firstRun = new DateTime(now.Year, now.Month, now.Day, hour, min, 0, 0);
@@ -33,11 +33,20 @@ namespace Wpf.Test.my.weather.classes.services
                 timeToGo = TimeSpan.Zero;
             }
 
+            TimeSpan timeInterval = new TimeSpan();
+            if (intervalinminutes > 0)
+            {
+                timeInterval = TimeSpan.FromMinutes(intervalinminutes);
+            }
+            else if (intervalinseconds > 0)
+            {
+                timeInterval = TimeSpan.FromSeconds(intervalinseconds);
+            }
+
             System.Threading.Timer timer = new System.Threading.Timer(x =>
             {
                 task.Invoke(parameter);
-            }, null, timeToGo, TimeSpan.FromHours(intervalInHour));
-
+            }, null, timeToGo, timeInterval);     
             timers.Add(timer);
 
             //System.Threading.Timer timer = new System.Threading.Timer(timer_Elapsed, null, timeToGo, TimeSpan.FromHours(intervalInHour));

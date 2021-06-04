@@ -23,7 +23,7 @@ namespace Wpf.Test.my.weather.viewmodels
     {
         public static event EventHandler ErrorEvent;
 
-        private static string JsonScheduledTaskTimeString = null;
+        private static string JsonSchedulerTimingsString = null;
         private static bool IsJsonFileReadSuccess = false;
         private static Exception ErrorException = null;
 
@@ -33,7 +33,7 @@ namespace Wpf.Test.my.weather.viewmodels
         private int _intervalminutes;
         private string _programmessage;
         private bool _iserror;
-        private ObservableCollection<Weather> _weatherdatacontainer; 
+        private List<WeatherModel> _weatherdatacontainer; 
 
         private DateTime dtEndTime;
         private DateTime dtStartTime;
@@ -41,17 +41,17 @@ namespace Wpf.Test.my.weather.viewmodels
         #region Properties
         public int IntervalSeconds { get { return _intervalseconds; } set { _intervalseconds = value; OnChanged(); } }
         public int IntervalMinutes { get { return _intervalminutes; } set { _intervalminutes = value; OnChanged(); } }
-        public string StartTime { get { return _starttime; } set { _starttime = value; OnChanged(); } }
-        public string EndTime { get { return _endtime; } set { _endtime = value; OnChanged(); } }
+        public string StartTime { get => _starttime ?? "00:00"; set { _starttime = value; OnChanged(); } }
+        public string EndTime { get => _endtime ?? "00:00"; set { _endtime = value; OnChanged(); } }
         public string ProgramMessage { get { return _programmessage; } set { _programmessage = value; OnChanged(); } }
         public bool IsError { get { return _iserror; } set { _iserror = value; OnChanged(); } }
 
-        public ObservableCollection<Weather> WeatherDataContainer
+        public List<WeatherModel> WeatherDataContainer
         {
             get 
             {
                 if (_weatherdatacontainer == null)
-                    _weatherdatacontainer = new ObservableCollection<Weather>();
+                    _weatherdatacontainer = new List<WeatherModel>();
                 return _weatherdatacontainer;
             }
             set { _weatherdatacontainer = value; OnChanged(); }
@@ -80,35 +80,41 @@ namespace Wpf.Test.my.weather.viewmodels
         static WeatherViewModel()
         {
             string json = null;
-            ErrorException = ReadJsonFile(out json);
-            JsonScheduledTaskTimeString = json;
+            ErrorException = ReadDataFromJsonSchedulerTimingsFile(out json);
+            JsonSchedulerTimingsString = json;
 
             if (ErrorException == null)
                 IsJsonFileReadSuccess = true;
             else
                 IsJsonFileReadSuccess = false;
         }
+
+        /// <summary>
+        /// read the json file containing the start, the end & the interval timings
+        /// </summary>
+        /// <param name="json">gets the json data in StringFormat</param>
+        /// <returns></returns>
         #endregion
-        private static Exception ReadJsonFile(out string json)
+        private static Exception ReadDataFromJsonSchedulerTimingsFile(out string json)
         {
             return PathManager.ReadFile(out json);
         }
 
         /// <summary>
         /// deserialize the json string to a object of class JsonScheduler.
-        /// set the start, the end and the interval time for running a task. 
+        /// set the start, the end and the interval time for executing the task. 
         /// </summary>
-        private bool DeserializeSchedulerData()
+        private bool GetSchedulerTimingsData()
         {
             if (IsJsonFileReadSuccess == false)
                 return false;
 
-            JsonScheduler taskscheduler = JsonService.DeserializeObject<JsonScheduler>(JsonScheduledTaskTimeString);  // JsonManager.DeserializeToObject(typeof(JsonWeatherConfiguration));
-            if (taskscheduler == null) // ToDo Error message for View
+            JsonSchedulerModel scheduleTimingsModel = JsonService.DeserializeObject<JsonSchedulerModel>(JsonSchedulerTimingsString);  // JsonManager.DeserializeToObject(typeof(JsonWeatherConfiguration));
+            if (scheduleTimingsModel == null) // ToDo Error message for View
                 return false;
 
-            this.StartTime = taskscheduler.StartTime;
-            this.EndTime = taskscheduler.EndTime;
+            StartTime = scheduleTimingsModel.StartTime;
+            EndTime = scheduleTimingsModel.EndTime;
 
             int startHours = Convert.ToInt32(StartTime.Split(':')[0]);
             int startMinutes = Convert.ToInt32(StartTime.Split(':')[1]);
@@ -117,8 +123,8 @@ namespace Wpf.Test.my.weather.viewmodels
 
             this.dtStartTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, startHours, startMinutes, 0);
             this.dtEndTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, endHours, endMinutes, 0);
-            this.IntervalMinutes = taskscheduler.Interval_Minutes;
-            this.IntervalSeconds = taskscheduler.Interval_Seconds;
+            this.IntervalMinutes = scheduleTimingsModel.Interval_Minutes;
+            this.IntervalSeconds = scheduleTimingsModel.Interval_Seconds;
             return true;
 
             //double tmpSecondsInDecimal = Convert.ToDouble(configuration.Interval_Seconds);
@@ -129,22 +135,23 @@ namespace Wpf.Test.my.weather.viewmodels
         {
             return true;
         }
-        private void StartTask()
+        public void StartScheduler()
         {
-           bool isSuccessRead = DeserializeSchedulerData();
+           bool isSuccessRead = GetSchedulerTimingsData();
             if (isSuccessRead)
             {
                if(Validation() == true)
                 {
-
-                   // SchedulerService.Instance.ScheduleTaskWithInterval()
+                    Action<string> ActionCurrentWeather = new Action<string>(GetCurrentWeatherForCity);
+                    SchedulerService.Instance.ScheduleTaskWithInterval(17, 08, 0, 10, ActionCurrentWeather,"Salzburg");
+                    //GetCurrentWeatherForCity("Salzburg");
                 }
                 else
                 {
                     //ToDo : Error message for View
                 }
                 {
-
+                    
                 }
             }
         }
@@ -152,12 +159,12 @@ namespace Wpf.Test.my.weather.viewmodels
         private async void GetCurrentWeatherForCity(string city)
         {
             WeatherApiAccess weatherApi = new WeatherApiAccess();
-            ApiResponseException ex = await weatherApi.GetAsyncCurrentWeather(city);
+            WebApiException ex = await weatherApi.GetAsyncCurrentWeather(city);
             if (ex == null)
             {
                 IsError = false;
                 JsonWeather jsonWeatherObject = JsonService.DeserializeObject<JsonWeather>(weatherApi.JsonString);
-                Weather weather = jsonWeatherObject;
+                WeatherModel weather = jsonWeatherObject;
                 WeatherDataContainer.Add(weather);
                 ProgramMessage = $"Die Wetterdatenabfrage für {city} ist fehlerfrei abgeschlossen worden.";
             }

@@ -16,15 +16,15 @@ namespace Wpf.Test.my.weather.converters
         {
             if (objectType == typeof(JsonWeather))
                 return (objectType == typeof(JsonWeather));
-            else return (objectType == typeof(JsonScheduler));
+            else return (objectType == typeof(JsonSchedulerModel));
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            if (objectType == typeof(JsonScheduler))
+            if (objectType == typeof(JsonSchedulerModel))
             {
                 JObject jo = JObject.Load(reader);
-                JsonScheduler taskSchedulerconfig = jo.ToObject<JsonScheduler>();
+                JsonSchedulerModel taskSchedulerconfig = jo.ToObject<JsonSchedulerModel>();
                 taskSchedulerconfig.StartTime = jo.SelectToken("schedule.start").ToString();
                 taskSchedulerconfig.EndTime = jo.SelectToken("schedule.end").ToString();
                 taskSchedulerconfig.Interval_Seconds = Convert.ToInt32(jo.SelectToken("schedule.interval_seconds"));
