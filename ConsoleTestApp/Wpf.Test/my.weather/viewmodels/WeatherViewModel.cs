@@ -27,6 +27,9 @@ namespace Wpf.Test.my.weather.viewmodels
         private static bool IsJsonFileReadSuccess = false;
         private static Exception ErrorException = null;
 
+        private int startHours;
+        private int startMinutes;
+
         private string _starttime;
         private string _endtime;
         private int _intervalseconds;
@@ -116,7 +119,7 @@ namespace Wpf.Test.my.weather.viewmodels
             StartTime = scheduleTimingsModel.StartTime;
             EndTime = scheduleTimingsModel.EndTime;
 
-            int startHours = Convert.ToInt32(StartTime.Split(':')[0]);
+            startHours = Convert.ToInt32(StartTime.Split(':')[0]);
             int startMinutes = Convert.ToInt32(StartTime.Split(':')[1]);
             int endHours = Convert.ToInt32(EndTime.Split(':')[0]);
             int endMinutes = Convert.ToInt32(EndTime.Split(':')[1]);
@@ -143,7 +146,7 @@ namespace Wpf.Test.my.weather.viewmodels
                if(Validation() == true)
                 {
                     Action<string> ActionCurrentWeather = new Action<string>(GetCurrentWeatherForCity);
-                    SchedulerService.Instance.ScheduleTaskWithInterval(17, 08, 0, 10, ActionCurrentWeather,"Salzburg");
+                    SchedulerService.Instance.ScheduleTaskWithInterval(11, 58, 1, 0, ActionCurrentWeather,"Salzburg");
                     //GetCurrentWeatherForCity("Salzburg");
                 }
                 else

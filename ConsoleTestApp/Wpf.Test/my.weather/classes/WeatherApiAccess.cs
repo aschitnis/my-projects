@@ -11,19 +11,20 @@ namespace Wpf.Test.my.weather.classes
 {
     internal sealed class WeatherApiAccess
     {
-        private HttpClient WeatherDataWebClient;
+        //private HttpClient WeatherDataWebClient;
 
         public string JsonString { get; set; }
         public WeatherApiAccess()
         {
-            WeatherDataWebClient = new HttpClient();
-            WeatherDataWebClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            //WeatherDataWebClient = new HttpClient();
+            //WeatherDataWebClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         }
         /// <summary>
         /// call the REST webservice to get the current weather condition. 
         /// </summary>
         /// <param name="city">current weather for the City</param>
-        /// <returns></returns>
+        /// <returns>a Exception derived from the Exception class. 
+        /// If there are no errors the exception object is NULL</returns>
         internal Task<WebApiException> GetAsyncCurrentWeather(string city)
         {
             WebApiException exc = null;
@@ -34,29 +35,34 @@ namespace Wpf.Test.my.weather.classes
                                     try
                                     {
                                         string endpointUrl = PathManager.GetWebServiceUrl(city);
-                                        response = await WeatherDataWebClient.GetAsync(endpointUrl);
-                                        if (response.IsSuccessStatusCode == true)
+                                        using(HttpClient weatherApi = new HttpClient())
                                         {
-                                            // Handle Success
-                                            if (response.Content is object)
+                                            weatherApi.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                                            response = await weatherApi.GetAsync(endpointUrl);
+                                            
+                                            if (response.IsSuccessStatusCode == true)
                                             {
-                                                JsonString = response.Content.ReadAsStringAsync().Result;
+                                                // Handle Success
+                                                if (response.Content is object)
+                                                {
+                                                    JsonString = response.Content.ReadAsStringAsync().Result;
+                                                }
+                                                else
+                                                {
+                                                    JsonString = null;
+                                                }
                                             }
                                             else
                                             {
-                                                JsonString = null;
+                                                // Handle failure
+                                                string errorMsg = response.Content.ReadAsStringAsync().Result;
+                                                exc = new WebApiException(errorMsg, response.StatusCode.ToString());
+                                                //RaiseCurrentWeatherWebServiceEvent(errorMessage);
                                             }
-                                        }
-                                        else
-                                        {
-                                            // Handle failure
-                                            string errorMsg = response.Content.ReadAsStringAsync().Result;
-                                            exc = new WebApiException(errorMsg, response.StatusCode.ToString());
-                                            //RaiseCurrentWeatherWebServiceEvent(errorMessage);
-                                        }
 
-                                        if (response != null)
-                                            response.Dispose();
+                                            if (response != null)
+                                                response.Dispose();
+                                        }
                                     }
                                     catch(HttpRequestException ex)
                                     {
