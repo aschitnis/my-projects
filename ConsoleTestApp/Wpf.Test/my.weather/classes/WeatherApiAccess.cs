@@ -6,13 +6,12 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Wpf.Test.my.weather.models.json;
+using Wpf.Test.my.weather.classes.constants;
 
 namespace Wpf.Test.my.weather.classes
 {
     internal sealed class WeatherApiAccess
     {
-        //private HttpClient WeatherDataWebClient;
-
         public string JsonString { get; set; }
         public WeatherApiAccess()
         {
@@ -34,7 +33,7 @@ namespace Wpf.Test.my.weather.classes
                                 {
                                     try
                                     {
-                                        string endpointUrl = PathManager.GetWebServiceUrl(city);
+                                        string endpointUrl = GlobalPathManager.GetWebServiceUrl(city);
                                         using(HttpClient weatherApi = new HttpClient())
                                         {
                                             weatherApi.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));

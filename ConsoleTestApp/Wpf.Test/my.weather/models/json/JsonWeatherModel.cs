@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wpf.Test.my.weather.models.json
 {
-    public class JsonWeather
+    public class JsonWeatherModel
     {
         [JsonProperty("name")]
         public string City { get; set; }
@@ -25,6 +25,6 @@ namespace Wpf.Test.my.weather.models.json
         public double MinTemperature { get; set; }
         [JsonProperty("main.temp_max")]
         public double MaxTemperature { get; set; }
-        public JsonWeather() { }
+        public JsonWeatherModel() { }
     }
 }

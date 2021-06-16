@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Wpf.Test.my.weather.models.json
 {
-    public class JsonWeatherApiError
+    public class JsonWeatherApiErrorModel
     {
         [JsonProperty("cod")]
         public string StatusCode { get; set; }
         [JsonProperty("message")]
         public string ErrorMessage { get; set; }
 
-        public JsonWeatherApiError() {   }
+        public JsonWeatherApiErrorModel() {   }
     }
 }

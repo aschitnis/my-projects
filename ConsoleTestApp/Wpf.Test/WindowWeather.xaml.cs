@@ -50,39 +50,39 @@ namespace Wpf.Test
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             WeatherVM.StartScheduler();
-            //Task.Factory.StartNew(() =>
-            //                   {
-            //                       ulong parameterNumber = 7444854523;
-            //                       GetAllPrimes(parameterNumber);
-            //                   });
         }
 
-        public void GetAllPrimes(ulong inputnumber)
+        private void dgExtendedData_AddingNewItem(object sender, AddingNewItemEventArgs e)
         {
-            var primes = new List<ulong>();
-            primes.Add(2);
-            primes.Add(3);
-            bool isprime = false;
-            double result = 0;
-            for (ulong i = 4; i < inputnumber; i++)
-            {
-                isprime = true;
-                foreach (ulong prime in primes)
-                {
-                    result = i % prime;
-                    if (result == 0)
-                    {
-                        isprime = false;
-                        break;
-                    }
-                }
-                if (isprime == true)
-                {
-                    LongRunningTaskEvent.Invoke(this, i);
-                    primes.Add(i);
-                }
-            }
-            int numberofprimes = primes.Count;
+            var se = sender;
         }
+
+        //public void GetAllPrimes(ulong inputnumber)
+        //{
+        //    var primes = new List<ulong>();
+        //    primes.Add(2);
+        //    primes.Add(3);
+        //    bool isprime = false;
+        //    double result = 0;
+        //    for (ulong i = 4; i < inputnumber; i++)
+        //    {
+        //        isprime = true;
+        //        foreach (ulong prime in primes)
+        //        {
+        //            result = i % prime;
+        //            if (result == 0)
+        //            {
+        //                isprime = false;
+        //                break;
+        //            }
+        //        }
+        //        if (isprime == true)
+        //        {
+        //            LongRunningTaskEvent.Invoke(this, i);
+        //            primes.Add(i);
+        //        }
+        //    }
+        //    int numberofprimes = primes.Count;
+        //}
     }
 }

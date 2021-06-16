@@ -10,6 +10,7 @@ namespace Wpf.Test.my.weather.classes.services
     public class SchedulerService
     {
         private static SchedulerService _instance;
+
         private List<Timer> timers = new List<Timer>();
         public static SchedulerService Instance => _instance ?? (_instance = new SchedulerService());
 
@@ -23,9 +24,12 @@ namespace Wpf.Test.my.weather.classes.services
             DateTime firstRun = new DateTime(now.Year, now.Month, now.Day, hour, min, 0, 0);
 
             if (now > firstRun)
-            {
-                firstRun = firstRun.AddDays(1);
-            }
+                return;
+
+                //if (now > firstRun)
+                //{
+                //    firstRun = firstRun.AddDays(1);
+                //}
 
             TimeSpan timeToGo = firstRun - now;
             if (timeToGo <= TimeSpan.Zero)
@@ -46,12 +50,11 @@ namespace Wpf.Test.my.weather.classes.services
             System.Threading.Timer timer = new System.Threading.Timer(x =>
             {
                 task.Invoke(parameter);
-            }, null, timeToGo, timeInterval);     
+            }, null, timeToGo, timeInterval);
+            
             timers.Add(timer);
 
             //System.Threading.Timer timer = new System.Threading.Timer(timer_Elapsed, null, timeToGo, TimeSpan.FromHours(intervalInHour));
-
-            //timers.Add(timer);
         }
 
         static void timer_Elapsed(object state)

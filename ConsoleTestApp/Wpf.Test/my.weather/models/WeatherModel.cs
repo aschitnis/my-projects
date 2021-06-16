@@ -38,6 +38,7 @@ CurrentTime
         private double _feelsliketemperature;
         private double _mintemperature;
         private double _maxtemperature;
+        private string _currenttime;
 
         public string City { get { return _city; } set { _city = value; OnPropertyChanged(); } }
         public double Latitude { get { return _latitude; } set { _latitude = value; OnPropertyChanged(); } }
@@ -47,7 +48,7 @@ CurrentTime
         public double FeelsLikeTemperature { get { return _feelsliketemperature; } set { _feelsliketemperature = value; OnPropertyChanged(); } }
         public double MinTemperature { get { return _mintemperature; } set { _mintemperature = value; OnPropertyChanged(); } }
         public double MaxTemperature { get { return _maxtemperature; } set { _maxtemperature = value; OnPropertyChanged(); } }
-
+        public string CurrentTime { get => _currenttime; set { _currenttime = value;OnPropertyChanged(); } }
         #region Constructors
         public WeatherModel() { }
         // Instance Constructor
@@ -61,17 +62,18 @@ CurrentTime
             this.FeelsLikeTemperature = feelsliketemperature;
             this.MinTemperature = mintemperature;
             this.MaxTemperature = maxtemperature;
+            this.CurrentTime = DateTime.Now.ToShortTimeString();
         }
         
         // Copy constructor
-        public WeatherModel(JsonWeather jsonweather)
+        public WeatherModel(JsonWeatherModel jsonweather)
                     :this(jsonweather.City,jsonweather.Latitude,jsonweather.Longitude,jsonweather.Description,jsonweather.CurrentTemperature,jsonweather.FeelsLikeTemperature,jsonweather.MinTemperature,jsonweather.MaxTemperature)
         {
 
         }
         #endregion
 
-        public static implicit operator WeatherModel(JsonWeather jsonmodel)
+        public static implicit operator WeatherModel(JsonWeatherModel jsonmodel)
         {
             WeatherModel w = new WeatherModel(jsonmodel);
             return w;
