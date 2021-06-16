@@ -13,11 +13,11 @@ namespace Wpf.Test.my.weather.classes
     internal sealed class WeatherApiAccess
     {
         public string JsonString { get; set; }
-        public WeatherApiAccess()
-        {
-            //WeatherDataWebClient = new HttpClient();
-            //WeatherDataWebClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-        }
+        
+        #region constructors 
+        public WeatherApiAccess()  {   }
+        #endregion
+
         /// <summary>
         /// call the REST webservice to get the current weather condition. 
         /// </summary>
