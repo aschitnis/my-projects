@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wpf.Test.my.weather.models.json
 {
-    public class JsonScheduler
+    public class JsonSchedulerModel
     {
         [JsonProperty("interval_seconds")]
         public int Interval_Seconds { get; set; }

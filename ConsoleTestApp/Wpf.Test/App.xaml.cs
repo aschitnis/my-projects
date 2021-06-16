@@ -34,7 +34,7 @@ namespace Wpf.Test
         }
         public static double IntervalInHours { get; private set; }
 
-        private void ConvertIntervalToHours(JsonScheduler configuration)
+        private void ConvertIntervalToHours(JsonSchedulerModel configuration)
         {
             IntervalInHours = configuration.Interval_Minutes > 0 ? System.Math.Round(Convert.ToDouble((configuration.Interval_Minutes * 60)) / 3600, 4) : 0;
         }
