@@ -222,6 +222,13 @@ namespace Wpf.Test.my.weather.viewmodels
                 {
                     ProgramMessage = $"Die Wetterdatenabfrage für {city} ist fehlerfrei abgeschlossen worden.";
                     WeatherModel weatherModel = JsonManager.JsonWeatherModel;
+
+                    // calculate the actual time at the selected city
+                    TimeSpan tsUTCCurrent = TimeZone.CurrentTimeZone.GetUtcOffset(TimeZone.CurrentTimeZone.ToLocalTime(DateTime.Now));
+                    DateTime currentTimeAtCity = DateTime.Now - (tsUTCCurrent - TimeSpan.FromSeconds(weatherModel.TimezoneForDestinationCityInSeconds));
+                    weatherModel.CurrentTime = DateTime.Now.ToString("HH:mm");
+                    weatherModel.CurrentTimeAtCity = currentTimeAtCity.ToString("HH:mm");
+
                     WeatherServiceCount++;
 
                     OnWeatherServiceExecuted(weatherModel);

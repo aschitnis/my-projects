@@ -38,7 +38,9 @@ CurrentTime
         private double _feelsliketemperature;
         private double _mintemperature;
         private double _maxtemperature;
+        private string _currenttimeatcity;
         private string _currenttime;
+        private double _timezonefordestinationcityinseconds;
 
         public string City { get { return _city; } set { _city = value; OnPropertyChanged(); } }
         public double Latitude { get { return _latitude; } set { _latitude = value; OnPropertyChanged(); } }
@@ -48,11 +50,14 @@ CurrentTime
         public double FeelsLikeTemperature { get { return _feelsliketemperature; } set { _feelsliketemperature = value; OnPropertyChanged(); } }
         public double MinTemperature { get { return _mintemperature; } set { _mintemperature = value; OnPropertyChanged(); } }
         public double MaxTemperature { get { return _maxtemperature; } set { _maxtemperature = value; OnPropertyChanged(); } }
-        public string CurrentTime { get => _currenttime; set { _currenttime = value;OnPropertyChanged(); } }
+        public string CurrentTimeAtCity { get => _currenttimeatcity ?? "00:00"; set { _currenttimeatcity = value;OnPropertyChanged(); } }
+        public string CurrentTime { get => _currenttime ?? "00:00"; set { _currenttime = value; OnPropertyChanged(); } }
+        public double TimezoneForDestinationCityInSeconds { get { return _timezonefordestinationcityinseconds; } set { _timezonefordestinationcityinseconds = value; OnPropertyChanged(); } }
+
         #region Constructors
         public WeatherModel() { }
         // Instance Constructor
-        public WeatherModel(string city,double latitude,double longitude, string description, double currenttemperature,double feelsliketemperature,double mintemperature, double maxtemperature) 
+        public WeatherModel(string city,double latitude,double longitude, string description, double currenttemperature,double feelsliketemperature,double mintemperature, double maxtemperature, double timezonefordestinationcityinseconds) 
         {
             this.City = city;
             this.Latitude = latitude;
@@ -62,12 +67,13 @@ CurrentTime
             this.FeelsLikeTemperature = feelsliketemperature;
             this.MinTemperature = mintemperature;
             this.MaxTemperature = maxtemperature;
-            this.CurrentTime = DateTime.Now.ToShortTimeString();
+            this.TimezoneForDestinationCityInSeconds = timezonefordestinationcityinseconds;
+            // this.CurrentTime = "00:00";
         }
         
         // Copy constructor
         public WeatherModel(JsonWeatherModel jsonweather)
-                    :this(jsonweather.City,jsonweather.Latitude,jsonweather.Longitude,jsonweather.Description,jsonweather.CurrentTemperature,jsonweather.FeelsLikeTemperature,jsonweather.MinTemperature,jsonweather.MaxTemperature)
+                    :this(jsonweather.City,jsonweather.Latitude,jsonweather.Longitude,jsonweather.Description,jsonweather.CurrentTemperature,jsonweather.FeelsLikeTemperature,jsonweather.MinTemperature,jsonweather.MaxTemperature,jsonweather.TimeZoneInSeconds)
         {
 
         }
