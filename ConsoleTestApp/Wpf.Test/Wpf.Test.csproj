@@ -126,6 +126,7 @@
     <Compile Include="my.weather\classes\converters\JsonHelperConverter.cs" />
     <Compile Include="my.weather\models\CountryModel.cs" />
     <Compile Include="my.weather\models\json\JsonCountryModel.cs" />
+    <Compile Include="my.weather\models\json\JsonGeocodingModel.cs" />
     <Compile Include="my.weather\models\json\JsonWeatherModel.cs" />
     <Compile Include="my.weather\models\json\JsonWeatherApiErrorModel.cs" />
     <Compile Include="my.weather\models\json\JsonSchedulerModel.cs" />

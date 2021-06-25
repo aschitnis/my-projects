@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpf.Test"
+        xmlns:local="clr-namespace:Wpf.Test" 
         mc:Ignorable="d"
         Title="??" Height="550" Width="900">
     <Grid ShowGridLines="False">
@@ -62,13 +62,15 @@
             </TextBlock>
         </Grid>
 
-        <DataGrid  AutoGenerateColumns="False" Grid.Column="0" Grid.Row="1" FontSize="16" Grid.ColumnSpan="3"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="AliceBlue"    
+        <DataGrid  AutoGenerateColumns="False" Grid.Column="0" Grid.Row="1" FontSize="18" Grid.ColumnSpan="3"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="AliceBlue"    
                   IsEnabled="True"  ScrollViewer.VerticalScrollBarVisibility="Auto"
                    Name="dgExtendedData" ItemsSource="{Binding WeatherDataContainer, Mode=TwoWay}"  SelectionMode="Single" AddingNewItem="dgExtendedData_AddingNewItem" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Temperatur (°C)"   MaxWidth="120" Binding="{Binding Path=CurrentTemperature}" IsReadOnly="True"  />
-                <DataGridTextColumn Header="aktuelle Zeit"  Width="100" MaxWidth="170" Binding="{Binding Path=CurrentTime}" IsReadOnly="True"  />
-                <DataGridTextColumn Header="Zeit am Ort"  Width="95" MaxWidth="140" Binding="{Binding Path=CurrentTimeAtCity}" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Temperatur (°C)"   MaxWidth="150" Binding="{Binding Path=CurrentTemperature}" IsReadOnly="True"  />
+                <DataGridTextColumn Header="aktuelle Zeit"  Width="110" MaxWidth="170" Binding="{Binding Path=CurrentTime}" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Zeit am Ort"  Width="100" MaxWidth="140" Binding="{Binding Path=CurrentTimeAtCity}" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Sonnenaufgang"  Width="140" MaxWidth="140" Binding="{Binding Path=SunriseTimeForCity}" IsReadOnly="True"  />
+                <DataGridTextColumn Header="Sonnenuntergang"  Width="155" MaxWidth="155" Binding="{Binding Path=SunsetTimeForCity}" IsReadOnly="True"  />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

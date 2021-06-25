@@ -41,6 +41,8 @@ CurrentTime
         private string _currenttimeatcity;
         private string _currenttime;
         private double _timezonefordestinationcityinseconds;
+        private string _sunrisetimeforcity;
+        private string _sunsettimeforcity;
 
         public string City { get { return _city; } set { _city = value; OnPropertyChanged(); } }
         public double Latitude { get { return _latitude; } set { _latitude = value; OnPropertyChanged(); } }
@@ -53,7 +55,9 @@ CurrentTime
         public string CurrentTimeAtCity { get => _currenttimeatcity ?? "00:00"; set { _currenttimeatcity = value;OnPropertyChanged(); } }
         public string CurrentTime { get => _currenttime ?? "00:00"; set { _currenttime = value; OnPropertyChanged(); } }
         public double TimezoneForDestinationCityInSeconds { get { return _timezonefordestinationcityinseconds; } set { _timezonefordestinationcityinseconds = value; OnPropertyChanged(); } }
-
+        public string SunriseTimeForCity { get => _sunrisetimeforcity ?? "00:00"; set { _sunrisetimeforcity = value; OnPropertyChanged(); } }
+        public string SunsetTimeForCity { get => _sunsettimeforcity ?? "00:00"; set { _sunsettimeforcity = value; OnPropertyChanged(); } }
+        
         #region Constructors
         public WeatherModel() { }
         // Instance Constructor

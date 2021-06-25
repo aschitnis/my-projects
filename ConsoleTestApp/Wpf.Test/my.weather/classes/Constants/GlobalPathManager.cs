@@ -67,6 +67,10 @@ namespace Wpf.Test.my.weather.classes.constants
                     exc = ValidateJsonString(filedata);
                 }
             }
+            else if (jsontype == JsonConstants.JsonTypes.Geocoding)
+            {
+                filedata = File.ReadAllText(@"C:\Projekte\ConsoleTestApp\Wpf.Test\bin\Debug\data\geocoding.json");
+            }
             else
             {
                 filedata = null;

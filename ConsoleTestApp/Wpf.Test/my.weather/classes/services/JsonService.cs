@@ -77,6 +77,10 @@ namespace Wpf.Test.my.weather.classes
                     JsonCountryBaseModel JsonRootModel = DeserializeObjectWithoutHelperConverter<JsonCountryBaseModel>(jsonstring);
                     JsonCountryModels = JsonRootModel.CountryBase.JsonCountries;
                 }
+                else if (jsontype == JsonConstants.JsonTypes.Geocoding)
+                {
+                    JsonGeocodingBaseModel JsonGeoCodingRootModel = DeserializeObjectWithoutHelperConverter<JsonGeocodingBaseModel>(jsonstring);
+                }
             }
             catch (Exception e)
             {

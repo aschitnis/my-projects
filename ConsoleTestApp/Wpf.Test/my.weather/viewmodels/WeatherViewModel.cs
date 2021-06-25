@@ -82,6 +82,12 @@ namespace Wpf.Test.my.weather.viewmodels
                 IsSchedulerStartButtonEnabled = false;
                 ProgramMessage = "Fehler beim Lesen der Länderdaten aus Jsondatei.";
             }
+
+            ex = GlobalPathManager.ReadFile(JsonConstants.JsonTypes.Geocoding, out JsonDataString);
+            if (ex == null)
+            {
+                Exception exce = TestInitializeGeoCodingDataFromJsonFile();
+            }
         }
         /// <summary>
         /// a) read the json file containing the scheduler timings for start etc.
@@ -109,6 +115,21 @@ namespace Wpf.Test.my.weather.viewmodels
             }
         }
 
+        private Exception TestInitializeGeoCodingDataFromJsonFile()
+        {
+            Exception ex = null;
+            try
+            {
+                ex = JsonManager.DeserializeToObject(JsonConstants.JsonTypes.Geocoding, JsonDataString);
+                string s = "";
+            }
+            catch (Exception e)
+            {
+                return e;
+            }
+            return ex;
+        }
+
         private Exception InitializeCountriesDataFromJsonFile()
         {
             Exception ex = null;
@@ -119,6 +140,8 @@ namespace Wpf.Test.my.weather.viewmodels
                 {
                     CountryModelsList = JsonManager.ToCountryModelsList(JsonManager.JsonCountryModels);
                 }
+
+                //ex = JsonManager.DeserializeToObject(JsonConstants.JsonTypes.Geocoding, JsonDataString);
             }
             catch (Exception e)
             {
@@ -129,6 +152,7 @@ namespace Wpf.Test.my.weather.viewmodels
 
         public void HandleWeatherServiceExecutedEvent(object sender, WeatherModel args)
         {
+            ProgramMessage = $"Die aktuelle Wetterdatenabfrage ist abgeschlossen.";
             WeatherDataContainer.Add(args);
         }
         public void OnWeatherServiceExecuted(WeatherModel weathermodel)
@@ -220,7 +244,9 @@ namespace Wpf.Test.my.weather.viewmodels
                 Exception exe = JsonManager.DeserializeToObject(JsonConstants.JsonTypes.CurrentWeather, weatherApi.JsonString);
                 if (exe == null)
                 {
-                    ProgramMessage = $"Die Wetterdatenabfrage für {city} ist fehlerfrei abgeschlossen worden.";
+                    double sunriseUtcTimeInSeconds = JsonManager.JsonWeatherModel.SunriseUtcTimeInSeconds;
+                    double sunsetUtcTimeInSeconds = JsonManager.JsonWeatherModel.SunsetUtcTimeInSeconds;
+
                     WeatherModel weatherModel = JsonManager.JsonWeatherModel;
 
                     // calculate the actual time at the selected city
@@ -228,6 +254,10 @@ namespace Wpf.Test.my.weather.viewmodels
                     DateTime currentTimeAtCity = DateTime.Now - (tsUTCCurrent - TimeSpan.FromSeconds(weatherModel.TimezoneForDestinationCityInSeconds));
                     weatherModel.CurrentTime = DateTime.Now.ToString("HH:mm");
                     weatherModel.CurrentTimeAtCity = currentTimeAtCity.ToString("HH:mm");
+
+                    // calculate the sunrise/sunset times for the selected city
+                    System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+                    weatherModel.SunriseTimeForCity = dtDateTime.AddSeconds(sunriseUtcTimeInSeconds).ToLocalTime().ToString("HH:mm");
 
                     WeatherServiceCount++;
 

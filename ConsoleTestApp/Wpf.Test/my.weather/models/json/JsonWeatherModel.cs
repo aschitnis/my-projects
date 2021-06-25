@@ -28,6 +28,10 @@ namespace Wpf.Test.my.weather.models.json
         public double MaxTemperature { get; set; }
         [JsonProperty("timezone")]
         public double TimeZoneInSeconds { get; set; }
+        [JsonProperty("sys.sunrise")]
+        public double SunriseUtcTimeInSeconds { get; set; }
+        [JsonProperty("sys.sunset")]
+        public double SunsetUtcTimeInSeconds { get; set; }
         public JsonWeatherModel() { }
     }
 }

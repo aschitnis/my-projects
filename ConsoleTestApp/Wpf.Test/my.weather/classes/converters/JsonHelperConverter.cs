@@ -52,6 +52,8 @@ namespace Wpf.Test.my.weather.classes.converters
                 weather.CurrentTemperature = (double)jo.SelectToken("main.temp");
                 weather.FeelsLikeTemperature = (double)jo.SelectToken("main.feels_like");
                 weather.TimeZoneInSeconds = (double)jo.SelectToken("timezone");
+                weather.SunriseUtcTimeInSeconds = (double)jo.SelectToken("sys.sunrise");
+                weather.SunsetUtcTimeInSeconds = (double)jo.SelectToken("sys.sunset");
                 return weather;
             }
         }

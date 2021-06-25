@@ -21,8 +21,7 @@ namespace Wpf.Test
     /// </summary>
     public partial class WindowWeather : Window
     {
-        private event EventHandler<ulong> LongRunningTaskEvent;
-
+        public static event EventHandler<ulong> LongRunningTaskTestEvent;
         private WeatherViewModel weatherVM;
         public WeatherViewModel WeatherVM
         {
@@ -35,7 +34,7 @@ namespace Wpf.Test
             WeatherVM = new WeatherViewModel();
             this.DataContext = WeatherVM;
 
-            LongRunningTaskEvent += WindowWeather_LongRunningTaskEvent;
+            LongRunningTaskTestEvent += WindowWeather_LongRunningTaskEvent;
         }
 
         private void WindowWeather_LongRunningTaskEvent(object sender, ulong e)
@@ -47,6 +46,34 @@ namespace Wpf.Test
            d.Completed += delegate (object s, EventArgs a) {  };
         }
 
+        public void RunTimeConsumingPrimeCalculation(ulong inputnumber)
+        {
+            var primes = new List<ulong>();
+            primes.Add(2);
+            primes.Add(3);
+            bool isprime = false;
+            double result = 0;
+            for (ulong i = 4; i < inputnumber; i++)
+            {
+                isprime = true;
+                foreach (ulong prime in primes)
+                {
+                    result = i % prime;
+                    if (result == 0)
+                    {
+                        isprime = false;
+                        break;
+                    }
+                }
+                if (isprime == true)
+                {
+                    LongRunningTaskTestEvent.Invoke(this, i);
+                    primes.Add(i);
+                }
+            }
+            int numberofprimes = primes.Count;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             WeatherVM.StartScheduler();
@@ -56,33 +83,5 @@ namespace Wpf.Test
         {
             var se = sender;
         }
-
-        //public void GetAllPrimes(ulong inputnumber)
-        //{
-        //    var primes = new List<ulong>();
-        //    primes.Add(2);
-        //    primes.Add(3);
-        //    bool isprime = false;
-        //    double result = 0;
-        //    for (ulong i = 4; i < inputnumber; i++)
-        //    {
-        //        isprime = true;
-        //        foreach (ulong prime in primes)
-        //        {
-        //            result = i % prime;
-        //            if (result == 0)
-        //            {
-        //                isprime = false;
-        //                break;
-        //            }
-        //        }
-        //        if (isprime == true)
-        //        {
-        //            LongRunningTaskEvent.Invoke(this, i);
-        //            primes.Add(i);
-        //        }
-        //    }
-        //    int numberofprimes = primes.Count;
-        //}
     }
 }
