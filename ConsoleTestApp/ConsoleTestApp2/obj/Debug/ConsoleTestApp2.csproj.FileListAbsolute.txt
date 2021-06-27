@@ -5,3 +5,13 @@ C:\Users\Mustermann\source\repos\ConsoleTestApp\ConsoleTestApp2\obj\Debug\Consol
 C:\Users\Mustermann\source\repos\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.csproj.CoreCompileInputs.cache
 C:\Users\Mustermann\source\repos\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.exe
 C:\Users\Mustermann\source\repos\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\bin\Debug\ConsoleTestApp2.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\bin\Debug\ConsoleTestApp2.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\bin\Debug\ConsoleTestApp2.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\bin\Debug\Abi.MySql.LibraryDatabase.Entities.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\bin\Debug\Abi.MySql.LibraryDatabase.Entities.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleTestApp2\obj\Debug\ConsoleTestApp2.pdb

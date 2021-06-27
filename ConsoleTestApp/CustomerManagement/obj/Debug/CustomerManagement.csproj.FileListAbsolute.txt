@@ -1,0 +1,14 @@
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\CustomerManagement.dll.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\CustomerManagement.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\CustomerManagement.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\EntityFramework.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\EntityFramework.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.Migrations.LS20CustomerDataStorageContextv1.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.csproj.GenerateResource.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\CustomerManagement\obj\Debug\CustomerManagement.pdb

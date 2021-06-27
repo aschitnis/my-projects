@@ -33,3 +33,38 @@ C:\Users\Mustermann\source\repos\ConsoleTestApp\Wpf Bettina Bauemer Application\
 C:\Users\Mustermann\source\repos\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.pdb
 C:\Users\Mustermann\source\repos\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\MainTransactions - Kopieren.g.cs
 C:\Users\Mustermann\source\repos\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\MainTransactions - Kopieren.baml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\Wpf Bettina Bauemer Application.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\Wpf Bettina Bauemer Application.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\Wpf Bettina Bauemer Application.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\schnittstelle.mysql.db.baeumer.services.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\MySqlConnector.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Memory.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Data.Common.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Buffers.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\netstandard.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\schnittstelle.mysql.db.baeumer.services.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\MySqlConnector.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Memory.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Buffers.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\MainTransactions - Kopieren.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\MainTransactions.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\App.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application_MarkupCompile.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application_MarkupCompile.lref
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\MainTransactions - Kopieren.baml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\MainTransactions.baml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.g.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf_Bettina_Bauemer_Application.Properties.Resources.resources
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.csproj.GenerateResource.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf Bettina Bauemer Application\obj\Debug\Wpf Bettina Bauemer Application.pdb

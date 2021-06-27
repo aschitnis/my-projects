@@ -132,6 +132,9 @@
     <Compile Include="my.weather\models\json\JsonSchedulerModel.cs" />
     <Compile Include="my.weather\models\SchedulerModel.cs" />
     <Compile Include="my.weather\models\WeatherModel.cs" />
+    <Compile Include="my.weather\Popups\InfoPopup.xaml.cs">
+      <DependentUpon>InfoPopup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="my.weather\viewmodels\WeatherViewModel.cs" />
     <Compile Include="MyCollection.cs" />
     <Compile Include="TestLogger.cs" />
@@ -154,8 +157,8 @@
     <Compile Include="WindowTest2.xaml.cs">
       <DependentUpon>WindowTest2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowWeather.xaml.cs">
-      <DependentUpon>WindowWeather.xaml</DependentUpon>
+    <Compile Include="MainWeatherApiWindow.xaml.cs">
+      <DependentUpon>MainWeatherApiWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="BookManagementResource.xaml">
       <SubType>Designer</SubType>
@@ -177,6 +180,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="my.weather\Popups\InfoPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowGridSplitter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -193,7 +200,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowWeather.xaml">
+    <Page Include="MainWeatherApiWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

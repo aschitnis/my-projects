@@ -1,0 +1,17 @@
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\ConsoleSocketServer.exe.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\ConsoleSocketServer.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\ConsoleSocketServer.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\log4net.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\SuperSocket.Common.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\SuperSocket.Facility.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\SuperSocket.SocketBase.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\SuperSocket.SocketEngine.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\SuperWebSocket.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\log4net.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\obj\Debug\ConsoleSocketServer.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\obj\Debug\ConsoleSocketServer.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\obj\Debug\ConsoleSocketServer.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\obj\Debug\ConsoleSocketServer.exe
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleSocketServer\obj\Debug\ConsoleSocketServer.pdb

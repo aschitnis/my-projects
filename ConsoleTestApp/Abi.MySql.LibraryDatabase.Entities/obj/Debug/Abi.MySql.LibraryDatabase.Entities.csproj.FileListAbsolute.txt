@@ -3,3 +3,9 @@ C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entiti
 C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.csproj.CoreCompileInputs.cache
 C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.dll
 C:\Users\Mustermann\source\repos\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\bin\Debug\Abi.MySql.LibraryDatabase.Entities.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\bin\Debug\Abi.MySql.LibraryDatabase.Entities.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Abi.MySql.LibraryDatabase.Entities\obj\Debug\Abi.MySql.LibraryDatabase.Entities.pdb

@@ -15,3 +15,4 @@ C:\Users\Mustermann\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketServ
 C:\Users\Mustermann\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketServer\obj\Debug\ConsoleWebSocketServer.csproj.CopyComplete
 C:\Users\Mustermann\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketServer\obj\Debug\ConsoleWebSocketServer.exe
 C:\Users\Mustermann\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketServer\obj\Debug\ConsoleWebSocketServer.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\ConsoleWebSocketServer\obj\Debug\ConsoleWebSocketServer.csprojAssemblyReference.cache

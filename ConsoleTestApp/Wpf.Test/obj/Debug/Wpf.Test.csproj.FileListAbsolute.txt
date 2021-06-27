@@ -68,7 +68,6 @@ C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowGr
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\DialogNewBookView.g.cs
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowTest.g.cs
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowTest2.g.cs
-C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowWeather.g.cs
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\App.g.cs
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test_MarkupCompile.cache
@@ -81,7 +80,6 @@ C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowGr
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\DialogNewBookView.baml
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowTest.baml
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowTest2.baml
-C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\WindowWeather.baml
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test.g.resources
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test.Properties.Resources.resources
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test.csproj.GenerateResource.cache
@@ -90,3 +88,7 @@ C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test.exe
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test.pdb
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\Wpf.Test.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\my.weather\Popups\InfoPopup.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\MainWeatherApiWindow.g.cs
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\my.weather\Popups\InfoPopup.baml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\obj\Debug\MainWeatherApiWindow.baml

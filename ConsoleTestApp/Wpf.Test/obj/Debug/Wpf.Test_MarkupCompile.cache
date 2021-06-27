@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\Wpf.Test\App.xaml
-8630118695
+9570312267
 
-6193727266
+62-1746545853
 74-86689502
-BookManagementResource.xaml;MainWindow.xaml;MainBooksWindow.xaml;WindowGridSplitter.xaml;DialogNewBookView.xaml;WindowTest.xaml;WindowTest2.xaml;WindowWeather.xaml;
+BookManagementResource.xaml;MainWindow.xaml;MainBooksWindow.xaml;my.weather\Popups\InfoPopup.xaml;WindowGridSplitter.xaml;DialogNewBookView.xaml;WindowTest.xaml;WindowTest2.xaml;MainWeatherApiWindow.xaml;
 
 False
 

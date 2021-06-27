@@ -9,3 +9,14 @@ C:\Users\Mustermann\source\repos\ConsoleTestApp\schnittstelle.http.rest.services
 C:\Users\Mustermann\source\repos\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.csproj.CopyComplete
 C:\Users\Mustermann\source\repos\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.dll
 C:\Users\Mustermann\source\repos\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\bin\Debug\schnittstelle.http.rest.services.dll.config
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\bin\Debug\schnittstelle.http.rest.services.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\bin\Debug\schnittstelle.http.rest.services.pdb
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\bin\Debug\ChilkatDotNet46.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.csprojAssemblyReference.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.csproj.CoreCompileInputs.cache
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.csproj.CopyComplete
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.dll
+C:\Users\Abi\source\repos\my-projects\ConsoleTestApp\schnittstelle.http.rest.services\obj\Debug\schnittstelle.http.rest.services.pdb
