@@ -83,11 +83,11 @@ namespace Wpf.Test.my.weather.viewmodels
                 ProgramMessage = "Fehler beim Lesen der Länderdaten aus Jsondatei.";
             }
 
-            ex = GlobalPathManager.ReadFile(JsonConstants.JsonTypes.Geocoding, out JsonDataString);
-            if (ex == null)
-            {
-                Exception exce = TestInitializeGeoCodingDataFromJsonFile();
-            }
+            //ex = GlobalPathManager.ReadFile(JsonConstants.JsonTypes.Geocoding, out JsonDataString);
+            //if (ex == null)
+            //{
+            //    Exception exce = TestInitializeGeoCodingDataFromJsonFile();
+            //}
         }
         /// <summary>
         /// a) read the json file containing the scheduler timings for start etc.

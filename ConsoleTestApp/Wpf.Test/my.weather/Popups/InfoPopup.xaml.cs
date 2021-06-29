@@ -27,7 +27,12 @@ namespace Wpf.Test.my.weather.Popups
 
         private void bCloseInfoPopup_Click(object sender, RoutedEventArgs e)
         {
+            infoPopup.IsOpen = false;
+        }
 
+        public void ShowInfoMessage(string message)
+        {
+            infoPopup.IsOpen = true;
         }
     }
 }

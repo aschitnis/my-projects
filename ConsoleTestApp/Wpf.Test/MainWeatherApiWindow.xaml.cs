@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,11 +24,18 @@ namespace Wpf.Test
     {
         public static event EventHandler<ulong> LongRunningTaskTestEvent;
         private WeatherViewModel weatherVM;
+        private static MainWeatherApiWindow _instance;
         public WeatherViewModel WeatherVM
         {
             get { return weatherVM; }
             set { weatherVM = value; }
         }
+        public static MainWeatherApiWindow Instance 
+        {
+            get { return _instance;}
+            private set { }
+        }
+
         public MainWeatherApiWindow()
         {
             InitializeComponent();
@@ -35,6 +43,14 @@ namespace Wpf.Test
             this.DataContext = WeatherVM;
 
             LongRunningTaskTestEvent += WindowWeather_LongRunningTaskEvent;
+        }
+
+        public void RegisterAndDisplayInfoMessage(string message)
+        {
+            Instance?.Dispatcher.Invoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
+            {
+                Instance.infoPopup.ShowInfoMessage(message);
+            });
         }
 
         private void WindowWeather_LongRunningTaskEvent(object sender, ulong e)
@@ -76,7 +92,8 @@ namespace Wpf.Test
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WeatherVM.StartScheduler();
+            // WeatherVM.StartScheduler();
+            RegisterAndDisplayInfoMessage("Hello World");
         }
 
         private void dgExtendedData_AddingNewItem(object sender, AddingNewItemEventArgs e)

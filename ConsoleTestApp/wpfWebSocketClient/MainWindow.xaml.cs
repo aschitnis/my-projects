@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using wpf.websocket.client.classes;
 
 // using WebSocketSharp;
@@ -24,6 +26,15 @@ namespace wpf.websocket.client
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static MainWindow myinstance;
+        #region properties
+        public static MainWindow Instance
+        {
+            get { return myinstance; }
+            private set { }
+        }
+        #endregion
+
         public SocketViewModel SocketVM { get; set; } = new SocketViewModel();
 
         public MainWindow()
@@ -37,6 +48,14 @@ namespace wpf.websocket.client
             SocketVM.ConnectAsyncToSocketServer();
  
            //string code = SocketVM.GetSelectedCurrencyCode();
+        }
+
+        public void RegisterAndDisplayInfoMessage(string message)
+        {
+            Instance?.Dispatcher.Invoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
+            {
+                Instance.infoPopup.ShowInfoMessage(message);
+            });
         }
     }
 }

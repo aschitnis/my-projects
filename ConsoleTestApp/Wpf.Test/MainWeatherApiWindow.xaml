@@ -4,7 +4,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpf.Test" 
+        xmlns:local="clr-namespace:Wpf.Test"
+         xmlns:popups="clr-namespace:Wpf.Test.my.weather.Popups"
         mc:Ignorable="d"
         Title="??" Height="550" Width="900">
     <Grid ShowGridLines="False">
@@ -18,6 +19,7 @@
             <RowDefinition Height="4*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Column="0"  Grid.Row="0" Grid.ColumnSpan="3" Background="AliceBlue">
@@ -73,5 +75,9 @@
                 <DataGridTextColumn Header="Sonnenuntergang"  Width="155" MaxWidth="155" Binding="{Binding Path=SunsetTimeForCity}" IsReadOnly="True"  />
             </DataGrid.Columns>
         </DataGrid>
+
+        <Grid Visibility="Collapsed" Grid.Row="4">
+            <popups:InfoPopup x:Name="infoPopup" Panel.ZIndex="98"></popups:InfoPopup>
+        </Grid>
     </Grid>
 </Window>
